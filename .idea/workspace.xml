@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="4fb0ee20-14b7-4694-9034-33b2818b3ef2" name="Changes" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 7
+}</component>
+  <component name="ProjectId" id="2V8py8vDSqqdYeF1Am59ag9Txxt" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "git-widget-placeholder": "master",
+    "last_opened_file_path": "C:/Codeit/Java_programming/Java_Workspace/src/Sample/Chap_3/PracticalProblem",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "onboarding.tips.debug.path": "C:/Users/COX-PC/Desktop/임성민/Codeit/Java programming/Java Workspace/src/Main.java",
+    "project.structure.last.edited": "Project",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.0",
+    "settings.editor.selected.configurable": "editor.preferences.tabs",
+    "vue.rearranger.settings.migration": "true"
+  }
+}]]></component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\COX-PC\Desktop\임성민\Codeit\Java programming\Java Workspace\src\Sample\Chap_2" />
+    </key>
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="Sample.Chap_5.PracticalProblem" />
+      <recent name="Sample.Chap_5" />
+    </key>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="d92a1da0-c2f6-4584-882b-7b100ad38d5c" name="Changes" comment="" />
+      <created>1694227816251</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1694227816251</updated>
+      <workItem from="1694227817095" duration="1755000" />
+      <workItem from="1694315468762" duration="1886000" />
+      <workItem from="1694429054258" duration="2902000" />
+      <workItem from="1694518042448" duration="2858000" />
+      <workItem from="1694602760823" duration="2685000" />
+      <workItem from="1694688192573" duration="3891000" />
+      <workItem from="1694783306166" duration="3033000" />
+      <workItem from="1694831813879" duration="8673000" />
+      <workItem from="1694918648289" duration="3100000" />
+      <workItem from="1695119428363" duration="5131000" />
+      <workItem from="1695212173052" duration="1452000" />
+      <workItem from="1695296464282" duration="4762000" />
+      <workItem from="1695377308095" duration="8619000" />
+      <workItem from="1695459745635" duration="6911000" />
+      <workItem from="1695471538997" duration="896000" />
+      <workItem from="1695472494884" duration="3298000" />
+      <workItem from="1695526927029" duration="7009000" />
+      <workItem from="1695640511886" duration="7374000" />
+      <workItem from="1695731422083" duration="3786000" />
+      <workItem from="1696143846852" duration="8181000" />
+      <workItem from="1696225591861" duration="5611000" />
+      <workItem from="1696508163234" duration="1023000" />
+      <workItem from="1696747306133" duration="3675000" />
+      <workItem from="1696754882797" duration="4722000" />
+      <workItem from="1696830999151" duration="1714000" />
+      <workItem from="1696935691724" duration="6357000" />
+      <workItem from="1697110353494" duration="3345000" />
+      <workItem from="1697115250985" duration="594000" />
+      <workItem from="1697195058855" duration="3996000" />
+      <workItem from="1697247517454" duration="5920000" />
+      <workItem from="1697268032178" duration="9205000" />
+      <workItem from="1697338289242" duration="5034000" />
+      <workItem from="1697345540258" duration="2000" />
+      <workItem from="1697366062100" duration="1799000" />
+      <workItem from="1697453812989" duration="4895000" />
+      <workItem from="1697543111094" duration="3420000" />
+      <workItem from="1697624616279" duration="5314000" />
+      <workItem from="1697710235458" duration="10083000" />
+      <workItem from="1697723596061" duration="1522000" />
+      <workItem from="1697806944357" duration="3816000" />
+      <workItem from="1697855558273" duration="2734000" />
+      <workItem from="1697873873472" duration="10078000" />
+      <workItem from="1697947611781" duration="149000" />
+      <workItem from="1697947783123" duration="938000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
+  </component>
+</project>

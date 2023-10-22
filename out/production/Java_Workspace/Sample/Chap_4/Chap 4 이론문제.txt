@@ -1,0 +1,111 @@
+1. 자바의 클래스와 객체에 대한 설명 중 틀린 것
+ -> 4번
+
+2. 생성자에 대한 설명 중 틀린 것
+ -> 4번
+
+3. 다음 코드 중 오류가 있는 것
+ -> 3번
+
+4. 다음 코드에 대해 설명하는 문항 중 틀린 것
+ -> 3번
+
+5. 다음 중 메소드 오버로딩에 실패한 사례
+ -> 1번
+
+6. 다음 코드에 대해 답하라
+ 1) this()를 이용해 생성자 수정
+  ->
+public TV() {
+    this(32, "LG");
+}
+public TV(String manufacturer) {
+    this(32, manufacturer);
+}
+public TV(int size, String manufacturer) {
+    this.size = 32;
+    this.manufacturer = manufacturer;
+    System.out.println(size + "인치 " + manufacturer);
+}
+ 2) new TV();와 new TV("삼성");을 실행하면 실행 결과는 각각?
+  -> 전자는 32인치 LG TV, 후자는 32인치 삼성 TV
+
+ 3) 65인치 "삼성" TV 객체를 생성하는 코드
+  -> TV tv = new TV(65, "삼성");
+
+ 4) this()를 이용하는 장점
+  -> 매개변수가 다르게 받더라도 임의의 값으로 같은 생성자를 적용하게 된다
+
+7. 다음 클래스에 있는 컴파일 오류 지적, 수정방법 제시, 그 중 객지프에 가장 적합한 방법 제시
+ -> aPerson.age = 17  // Person 클래스의 age 필드는 private 인데 직접 접근하고 있다.
+해결책 1. public int age로 바꾼다 (static 추가도 가능)
+2. public int getAge() { return age; }와 같이 age 필드를 리턴하는 메소드를 만들어 사용한다.
+2번이 더 적합하다. 왜냐하면 캡슐화 원칙을 위해 필드들은 되도록 private로 설정해 두는 것이 좋기 때문이다.
+
+8. 다음 코드를 객지프 관점에서 바람직하게 수정
+1) 생성자를 이용해 수정
+class Power {
+    private int kick;
+    private int punch;
+    public Power(int kick, int punch) {
+        this.kick = kick;
+        this.punch = punch;
+    }
+}
+main() {
+    Power robot = new Power(10, 20);
+}
+2) 생성자 대신 메소드 추가
+class Power {
+    private int kick;
+    private int punch;
+    public void setKick(int kick) {
+        this.kick = kick;
+    }
+    public void setPunch(int punch) {
+        this.punch = punch;
+    }
+}
+main() {
+    Power robot = new Power();
+    robot.setKick(10);
+    robot.setPunch(10);
+}
+
+9. 객체 소멸에 대한 설명
+자바에서는 객체를 임의로 "소멸시킬" 수 없으며, 이것은 개발자에게 매우 "난처한" 일이다.  // 오답: 난처한 > 다행한
+참조하는 "레퍼런스"가 하나도 없는 객체를 "가비지"라고 판단하고, 이를 가용 메모리로 자동 수집하는 "가비지 컬렉션"을 진행시킨다.
+응용프로그램에서 자바 플랫폼에게 이 과정을 지시하고자 하면 "System.gc()" 코드를 호출하면 된다.
+
+10. 다음 코드 실행 시 가비지 발생? 그 위치와 과정은?
+1) n = 1 ~ 8까지 String 객체 생성 할 때
+이전에 만든 객체를 대신해 새 객체의 레퍼런스로 대체되면서 이전의 객체는 가비지가 된다.
+n = 0일때 객체는 n = 1일때 객체가 만들어지면서 가비지가 됨
+n = 9일때 객체는 이후에 객체가 만들어지지 않으므로 가비지가 되지 않음
+2) 가비지 발생 x
+
+11. 멤버 함수 사용 잘못된 것
+ -> 4번
+
+12. 잘못된 문장
+ -> 1번
+
+13. 틀린부분 판단, 있으면 수정
+ -> non-static 메소드 f()를 객체 없이 호출하였음
+메소드를 static으로 바꾸거나 main() 메소드에서 Test 객체를 만든 후 사용하여야 함
+
+14. final과 관련해 잘못된 3가지를 설명
+ -> final 클래스(Rect 클래스)는 누군가에게 상속되지 못한다
+f() 메소드에서, 상수 x를 수정하고 있다(상수는 초기화 후 수정되지 않는다)
+자식 클래스(SpecialRect 클래스)에서 final 메소드인 f() 메소드를 오버라이딩 하고 있다(final 메소드는 오버라이딩할 수 없다)
+
+15. 가비지 뭔지, 자바에 가비지 컬렉션 왜 필요, 가비지 컬렉션의 장단점
+ -> 가비지란 어떤 레퍼런스도 가리키지 않아 접근할 수 없게 된 객체를 의미
+자바에는 객체를 소멸시킬 수단이 없어 가비지가 많이 쌓이면 가비지 컬렉션을 통해 적절한 때에 가비지를 청소해 가용 메모리를 확보함
+개발자가 객체를 소멸시키는 것에 대해 신경쓰지 않아도 됨
+가비지 컬렉션이 실행되면 응용프로그램이 멈추게 됨
+
+16. 다음 표 완성
+-                 default  //  public  //  protected  //  private
+같은 패키지 클래스   o        //  o       // o           //  x
+다른 패키지 클래스   x        //  o       // x(자식은 o)  //  x

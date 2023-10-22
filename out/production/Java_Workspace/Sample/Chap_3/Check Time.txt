@@ -1,0 +1,163 @@
+Check Time
+
+--------------------------------------------------------------
+3-2
+1. 2중 중첩을 사용하여 오른쪽과 같이 출력되도록 for, while, do-while 문으로 프로그램 각각 작성
+ 1) for 문
+  ->
+int n = 5;  // 탑의 층수
+for (int i = 1; i <= n; i++) {
+    for (int j = 1; j <= n - i + 1; j++) {
+        System.out.print("*");
+    }
+
+    System.out.print("\n");
+}
+
+ 2) while 문
+  ->
+int n = 5;  // 탑의 층수
+int i = 1;  // 외부 반복문 조건식 변수
+while (i <= 5) {
+    int j = 1;  // 내부 반복문 조건식 변수
+    while (j <= n - i + 1) {
+        System.out.print("*");
+        j++;
+    }
+
+    System.out.print("\n");
+    i++;
+}
+
+ 3) do-while 문
+  ->
+int n = 5;  // 탑의 층수
+int i = 1;  // 외부 반복문 조건식 변수
+do {
+    int j = 1;  // 내부 반복문 조건식 변수
+    do {
+        System.out.print("*");
+        j++;
+    } while (j <= n - i + 1);
+
+    System.out.print("\n");
+    i++;
+} while (i <= n);
+
+2. for(;;);를 실행하면 어째되는가
+ -> 계속해서 아무 일도 안 일어난다.
+
+3. 1부터 100까지 3의 배수의 합을 구하는 프로그램
+ ->
+int sum = 0;
+for (int i = 3; i <= 100; i += 3) {
+    sum += i;
+}
+System.out.println(sum);
+
+--------------------------------------------------------------
+3-3
+1. 10개의 정수를 저장하는 배열 tenArray 선언, 생성 코드 작성
+ ->
+int tenArray[];
+tenArray = new int[10];  // int tenArray[] = new int[10];
+
+2. 배열 tenArray의 크기 알아내는 방법
+ -> tenArray.length
+
+3. 배열 tenArray에 1 ~ 10까지 저장 후, 모든 원소 값 더해 출력 프로그램 작성
+ ->
+int tenArray[] = new int[10];
+for (int i = 0; i < tenArray.length; i++) {
+    tenArray[i] = i+1;
+}
+
+int sum = 0;
+for (int i : tenArray) {
+    sum += i;
+}
+System.out.println(sum);
+
+--------------------------------------------------------------
+3-5
+1. 다음 중 배열 선언과 생성이 옳은 것
+ -> 3번 'int a [] = new int [5];'
+
+2. int형 원소를 갖는 2 * 3 크기 2차원 배열
+ -> int arr[][] = new int[2][3];
+
+3. 다음은 원소 4개로 구성된 일차원 문자 배열을 리턴하는 makecharArray() 코드, 빈칸 채우기
+ ->
+|char[]| makeCharArray() {
+    char [] c = new char[4];
+    |return c|;
+}
+
+4. 다음 그림과 같은 구조, 값 갖는 비정방형 배열
+ ->
+// 오답
+int arr[][];
+arr = new int[4][];
+arr[0] = {0, 1, 2, 3};
+arr[1] = {4};
+arr[2] = {5};
+arr[3] = {6, 7, 8, 9};
+
+// 정답
+int arr[][];
+arr = new int[4][];
+arr[0] = new int[4];
+arr[1] = new int[1];
+arr[2] = new int[1];
+arr[3] = new int[4];
+
+int k = 0;
+for (int i = 0; i < arr[0].length; i++) {
+    arr[0][i] = k++;
+}
+arr[1][0] = k++;
+arr[2][0] = k++;
+for (int i = 0; i < arr[3].length; i++) {
+    arr[3][i] = k++;
+}
+
+for (int i = 0; i < 4; i++) {
+    for (int j: arr[i]) {
+        System.out.print(j);
+        System.out.print(' ');
+    }
+    System.out.println();
+}
+
+// 다른 정답
+int arr[][] = {{0, 1, 2, 3}, {4}, {5}, {6, 7, 8, 9}};
+
+--------------------------------------------------------------
+3-6
+1. main() 메소드의 매개변수 타입
+ -> 문자열 배열
+
+2. 위 메소드에서 사용자가 입력한 명령행 인자 갯수 알아내는 법
+ -> args.length (length 필드를 사용한다)
+
+3. 명렿애 인자를 모두 출력하는 main() 메소드 작성
+ ->
+public class Hello {
+    public static void main(String[] args) {
+        final int L = args.length;
+        for (int i : args) {
+            System.out.print(i + " ");
+        }
+        System.out.println();
+    }
+}
+
+--------------------------------------------------------------
+3-7
+1. 예외 발생 소지 있는 코드는 try, catch?
+ -> try
+
+2. 다음 밑줄 친 문장을 실행 시 발생하는 예외
+1) ArrayIndexOutOfBoundsException
+2) ClassCastException // 오답  | NumberFormatException
+3) NullPointerException

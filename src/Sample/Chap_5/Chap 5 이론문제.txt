@@ -1,0 +1,131 @@
+1. 다음 클래스에 대해 물음에 답하라
+1) A objA = new A(); 객체의 멤버 모두 나열
+ -> 필드 변수 a, 메소드 set()
+2) B objB = new B(); 객체 멤버 모두 나열
+ -> 필드 변수 a, 메소드 set(), 필드 변수 b, c
+3) C objC = new C(); 객체 멤버 모두 나열
+ -> 필드 변수 a, 메소드 set(), 필드 변수 b, c, d, e
+4) 클래스 D에서 오류 발생 라인
+ -> 1번 'a = 1;'
+
+2. 자바 모든 클래스가 반드시 상속받는 클래스
+ -> 1번 'Object'
+
+3. 상속을 이용해 다음 클래스 재작성
+class Pen {
+    private int amount;  // 남은 양
+    public int getAmount() { return amount; }
+    public void setAmount(int amount) { this.amount = amount; }
+}
+
+class SharpPencil extends Pen {
+    private int width;  // 펜의 굵기
+}
+
+class BallPen extends Pen {
+    private String color;
+    public String getColor() { return color; }
+    public void setColor(String color) { this.color = color; }
+}
+
+class FountainPen extends BallPen {
+    public void refill(int n) { amount = n; }  // 남은 양 보충
+}
+
+4. 다음 설명에 적절한 단어 기입
+ -> 자바에서 상속받는 클래스를 '서브 클래스'라고 부르며, 'extends' 키워드를 이용하여
+    상속을 선언한다. 상속받은 클래스에서 상속해준 클래스의 멤버를 접근할 때 'super' 키워드를
+    이용한다. 한편, 객체가 어떤 클래스의 타입인지 알아내기 위해서는 'instanceof' 연산자를
+    이용하며, 인터페이스는 클래스와 달리 'interface' 키워드를 이용하여 선언한다.
+
+5. 상속 관련 접근 지정자에 대한 설명 틀린 것
+ -> 2번 protected 멤버는 패키지에 상관없이 서브 클래스에서는 접근 가능
+
+6. 빈칸에 코드 한 줄 삽입
+ -> super(size);
+
+7. 실행 시 출력 내용?
+ -> A \n B:11
+
+8. 생성자로 인한 오류 찾고 이유, 수정
+ -> B의 생성자에서 슈퍼 생성자 명시 x, 근데 A에는 기본 생성자 부재 => 오류
+public B() {
+    super(0);
+    b = 0;
+}
+
+or
+
+protected A() { }; 추가
+
+9. 추상 클래스 선언이나 사용 잘못된 것 찾고 오류 지적
+1번: 메소드 f()가 구현되지 않음 -> f()를 추상메소드로 만들거나 코드 내용 삽입
+2번: 오류 없음
+3번: 서브 클래스 C가 추상 메소드 f()를 구현하지 않음
+4번: 오류 없음  // 오답: 서브 클래스 C가 추상 메소드 f()를 오버라이딩이 아닌 오버로딩 함
+
+10. false로 출력되도록 클래스 B 완성
+메소드 삽입
+public boolean isOdd() {
+    return (this.x % 2 == 1);
+}
+
+11. 물음 답하기
+1) 업캐스팅 모두 골라라
+ -> 2번 'B b = new C();', 3번 'A a = new D();'
+2) 코드 실행 결과
+ -> true \n false
+3) 코드 실행 결과
+ -> true \n true
+
+12. 물음 답하기
+1) Shape s = new Circle(); s.draw() 호출 시 출력 내용
+ -> Circle
+2) s.paint() 호출 시 "Circle" 출력되게 코드 삽입
+ -> this.draw();
+3) s.paint() 호출 시 "Shape" 출력되게
+ -> super.draw();
+
+13. 물음 답하기
+1) 오류 발생 코드 고르기
+ -> 2번 'Shape s = new Shape();', 4번 'Circle c = new Circle(10);'
+2) 반지름=10 출력되게 Circle 클래스 수정
+class Circle extends Shape { // abstract 키워드 삭제
+    private int radius;
+    public Circle(int radius) { this.radius = radius; }
+    double getArea() { return 3.14 * radius * radius; }
+    public void draw() {
+        System.out.println("반지름=" + this.radius);
+    }
+}
+
+14. 다형성 설명 중 틀린 것
+ -> 4번 '자바에서 다형서은 모호한 문제를 일으키므로 사용 않는 것이 좋다'
+
+15. 인터페이스 특징 아닌 것
+ -> 2번 '멤버 변수 선언 가능'
+
+16. 빈칸 채우고, 실행예시대로 출력되게 메소드 추가 작성
+interface Device {
+    void on();
+    void off();
+}
+public class TV implements Device {
+    void on() {
+        System.out.println("켜졌습니다.");
+    }
+
+    void off() {
+        System.out.println("종료합니다.");
+    }
+
+    void watch() {
+        System.out.println("방송중입니다.");
+    }
+    public static void main(String[] args) {
+        TV myTV = new TV();
+        myTV.on();
+        myTV.watch();
+        myTV.off();
+    }
+}

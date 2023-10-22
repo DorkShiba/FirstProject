@@ -1,0 +1,63 @@
+1. public class (name) {}
+
+2. 1) main 함수가 없다. public static void main(String[] args) {}를 작성해
+      {} 안에 위 코드 중 클래스 내부의 코드들을 집어넣는다.
+   2) SampleProgram.java
+   3) javac SampleProgram.java
+   4) java SampleProgram
+
+3. int %j / double 1var
+
+4. 1) int height;
+   2) double size = 0.25d;
+   3) double total = height + size;
+   4) char c = 'a';
+   5) String name = "Lim Seongmin";
+
+5. 1) 79.8 / double
+   2) 3 / int
+   3) 3.3333... / double
+   4) false / boolean
+
+6. final double bodyTemp = 36.5d;
+
+7. 1) while (true) {}
+   2) int n = 3; or float n = 3.5f;
+   3) boolean b = (3<5) ? true : false;
+   4)
+int score = 85;
+if (score > 80 && score < 90)
+    System.out.print(score);
+
+8. 1) age <= 12
+   2) age < b && age > c
+   3) age - 5 == 10
+   4) age != b || age == c
+
+9. sum = (sum > 100) ? 100 : 0;
+
+10. ???
+
+11. "\"를 출력하려면 \\ 다음에 \"를 붙여 \\\"과 같이 하면 됩니다."
+
+12. "나는 "Java를 100%"사랑해
+
+13. 1) 190
+    2) 90
+    3) 40
+    4) 0
+
+14. ->
+switch (in) {
+    case "가위":
+        System.out.println(1);
+        break;
+    case "바위":
+        System.out.println(2);
+        break;
+    case "보":
+        System.out.println(3);
+        break;
+    default:
+        System.out.println(0);
+}
