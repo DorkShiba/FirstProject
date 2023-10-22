@@ -1,4 +1,5 @@
 package Sample.Chap_5.PracticalProblem;
+import java.util.InputMismatchException;
 import java.util.Scanner;
 
 abstract class Calc {
@@ -22,36 +23,38 @@ class Mul extends Calc {
 class Div extends Calc {
     public int calculate() { return a / b;}
 }
+
 public class Calculator {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
         int a, b;
         String oper;
-        System.out.print("두 정수와 연산자를 입력하시오>>");
-        a = scanner.nextInt();
-        b = scanner.nextInt();
-        oper = scanner.next();
-        switch (oper) {
-            case "+" -> {
-                Add add = new Add();
-                add.setValue(a, b);
-                System.out.println(add.calculate());
-            }
-            case "-" -> {
-                Sub sub = new Sub();
-                sub.setValue(a, b);
-                System.out.println(sub.calculate());
-            }
-            case "*" -> {
-                Mul mul = new Mul();
-                mul.setValue(a, b);
-                System.out.println(mul.calculate());
-            }
-            case "/" -> {
-                Div div = new Div();
-                div.setValue(a, b);
-                System.out.println(div.calculate());
+        Calc calc;
+        while (true) {
+            try {
+                System.out.print("두 정수와 연산자를 입력하시오>>");
+                a = scanner.nextInt();
+                b = scanner.nextInt();
+                oper = scanner.next();
+                if (!oper.equals("+") && !oper.equals("-") && !oper.equals("*") && !oper.equals("/")) {
+                    System.out.println("알맞은 연삱를 입력해주십시오");
+                    continue;
+                }
+                break;
+            } catch (InputMismatchException e) {
+                System.out.println("알맞은 정수를 입력해주십시오");
+                scanner.nextLine();
             }
         }
+
+        switch (oper) {
+            case "+" -> calc = new Add();
+            case "-" -> calc = new Sub();
+            case "*" -> calc = new Mul();
+            default -> calc = new Div();
+        }
+
+        calc.setValue(a, b);
+        System.out.println(calc.calculate());
     }
 }

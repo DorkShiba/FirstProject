@@ -1,4 +1,5 @@
 package Sample.Chap_5.PracticalProblem;
+import java.util.InputMismatchException;
 import java.util.Scanner;
 
 interface Stack {
@@ -7,6 +8,7 @@ interface Stack {
     String pop();
     boolean push(String val);
 }
+
 class StringStack implements Stack {
     private int volume;
     private int len;
@@ -21,7 +23,7 @@ class StringStack implements Stack {
     public int length() { return len; }
 
     public boolean push(String val) {
-        if (len == this.capacity()) { return false; }
+        if (len == volume) { return false; }
         else {
             stack[len] = val;
             len++;
@@ -43,10 +45,18 @@ public class StackApp {
         Scanner scanner = new Scanner(System.in);
         int vol; String str;
 
-        System.out.print("총 스택 저장공간 크기 입력 >> ");
-        vol = scanner.nextInt();
-        StringStack s = new StringStack(vol);
+        while (true) {
+            try {
+                System.out.print("총 스택 저장공간 크기 입력 >> ");
+                vol = scanner.nextInt();
+                break;
+            } catch (InputMismatchException e) {
+                System.out.println("올바른 정수를 입력해주세요");
+                scanner.nextLine();
+            }
+        }
 
+        StringStack s = new StringStack(vol);
         System.out.print("문자열 입력 >> ");
         str = scanner.next();
 

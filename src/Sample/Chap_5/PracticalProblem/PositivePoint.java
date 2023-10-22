@@ -1,6 +1,7 @@
 package Sample.Chap_5.PracticalProblem;
 
 public class PositivePoint extends Point {
+    // Constructor
     public PositivePoint() { super(0, 0); }
     public PositivePoint(int x, int y) {
         super(x, y);
