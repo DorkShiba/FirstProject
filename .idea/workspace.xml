@@ -5,7 +5,24 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="4fb0ee20-14b7-4694-9034-33b2818b3ef2" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Java_Workspace/Sample/Chap_5/A.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Java_Workspace/Sample/Chap_5/PracticalProblem/IPTV.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Java_Workspace/Sample/Chap_5/PracticalProblem/Km2Mile.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Java_Workspace/Sample/Chap_5/PracticalProblem/Point3D.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Java_Workspace/Sample/Chap_5/PracticalProblem/PositivePoint.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Java_Workspace/Sample/Chap_5/PracticalProblem/Stack.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Java_Workspace/Sample/Chap_5/PracticalProblem/StackApp.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Java_Workspace/Sample/Chap_5/PracticalProblem/StringStack.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Java_Workspace/Sample/Chap_5/PracticalProblem/Won2Dollar.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Java_Workspace/Sample/Chap_5/_05_.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Java_Workspace/Sample/_01_.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Java_Workspace/TripleFantasy/Card$Group.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Java_Workspace/TripleFantasy/Card.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Java_Workspace/TripleFantasy/Combination.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Java_Workspace/TripleFantasy/Deck.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Java_Workspace/TripleFantasy/Field.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Sample/Chap_5/PracticalProblem/GraphicEditor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Sample/Chap_5/PracticalProblem/GraphicEditor.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -19,6 +36,12 @@
       </list>
     </option>
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProblemsViewState">
+    <option name="selectedTabId" value="CurrentFile" />
+  </component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 7
 }</component>
@@ -27,26 +50,26 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "git-widget-placeholder": "master",
-    "last_opened_file_path": "C:/Codeit/Java_programming/Java_Workspace/src/Sample/Chap_3/PracticalProblem",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "onboarding.tips.debug.path": "C:/Users/COX-PC/Desktop/임성민/Codeit/Java programming/Java Workspace/src/Main.java",
-    "project.structure.last.edited": "Project",
-    "project.structure.proportion": "0.15",
-    "project.structure.side.proportion": "0.0",
-    "settings.editor.selected.configurable": "editor.preferences.tabs",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Codeit/Java_programming/Java_Workspace/src/Sample/Chap_3/PracticalProblem&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;onboarding.tips.debug.path&quot;: &quot;C:/Users/COX-PC/Desktop/임성민/Codeit/Java programming/Java Workspace/src/Main.java&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Project&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;editor.preferences.tabs&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\COX-PC\Desktop\임성민\Codeit\Java programming\Java Workspace\src\Sample\Chap_2" />
@@ -59,7 +82,7 @@
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="d92a1da0-c2f6-4584-882b-7b100ad38d5c" name="Changes" comment="" />
+      <changelist id="4fb0ee20-14b7-4694-9034-33b2818b3ef2" name="Changes" comment="" />
       <created>1694227816251</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
@@ -107,7 +130,8 @@
       <workItem from="1697855558273" duration="2734000" />
       <workItem from="1697873873472" duration="10078000" />
       <workItem from="1697947611781" duration="149000" />
-      <workItem from="1697947783123" duration="1237000" />
+      <workItem from="1697947783123" duration="3010000" />
+      <workItem from="1697950858486" duration="3230000" />
     </task>
     <servers />
   </component>
