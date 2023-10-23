@@ -10,19 +10,21 @@ abstract class Shape {
 }
 
 class Line extends Shape {
-    public Line() {}
+    @Override
     public void draw() {
         System.out.println("Line");
     }
 }
 
 class Rect extends Shape {
+    @Override
     public void draw() {
         System.out.println("Rect");
     }
 }
 
 class Circle extends Shape {
+    @Override
     public void draw() {
         System.out.println("Circle");
     }

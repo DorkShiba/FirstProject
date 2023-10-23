@@ -49,6 +49,10 @@ public class StackApp {
             try {
                 System.out.print("총 스택 저장공간 크기 입력 >> ");
                 vol = scanner.nextInt();
+                if (vol <= 0) {
+                    System.out.println("올바른 정수를 입력해주세요");
+                    continue;
+                }
                 break;
             } catch (InputMismatchException e) {
                 System.out.println("올바른 정수를 입력해주세요");
@@ -57,9 +61,9 @@ public class StackApp {
         }
 
         StringStack s = new StringStack(vol);
+
         System.out.print("문자열 입력 >> ");
         str = scanner.next();
-
         while (!str.equals("그만")) {
             if (!s.push(str)) {
                 System.out.println("스택이 꽉 차서 푸시 불가!");

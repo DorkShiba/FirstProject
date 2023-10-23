@@ -6,11 +6,9 @@
   <component name="ChangeListManager">
     <list default="true" id="4fb0ee20-14b7-4694-9034-33b2818b3ef2" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Sample/Chap_5/PracticalProblem/Calculator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Sample/Chap_5/PracticalProblem/Calculator.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Sample/Chap_5/PracticalProblem/ColorPoint.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Sample/Chap_5/PracticalProblem/ColorPoint.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Sample/Chap_5/PracticalProblem/Point3D.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Sample/Chap_5/PracticalProblem/Point3D.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Sample/Chap_5/PracticalProblem/PositivePoint.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Sample/Chap_5/PracticalProblem/PositivePoint.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Sample/Chap_5/PracticalProblem/GraphicEditor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Sample/Chap_5/PracticalProblem/GraphicEditor.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Sample/Chap_5/PracticalProblem/StackApp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Sample/Chap_5/PracticalProblem/StackApp.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/TripleFantasy/Deck.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/TripleFantasy/Deck.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -28,7 +26,7 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="ProblemsViewState">
-    <option name="selectedTabId" value="ProjectErrors" />
+    <option name="selectedTabId" value="CurrentFile" />
   </component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 7
@@ -119,7 +117,11 @@
       <workItem from="1697873873472" duration="10078000" />
       <workItem from="1697947611781" duration="149000" />
       <workItem from="1697947783123" duration="3010000" />
-      <workItem from="1697950858486" duration="6748000" />
+      <workItem from="1697950858486" duration="7062000" />
+      <workItem from="1697967298387" duration="1767000" />
+      <workItem from="1698054138650" duration="666000" />
+      <workItem from="1698061451618" duration="51000" />
+      <workItem from="1698062782959" duration="1570000" />
     </task>
     <servers />
   </component>
