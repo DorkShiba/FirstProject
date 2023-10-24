@@ -38,88 +38,119 @@ class Card {
 }
 
 class Pack {
-    private int amount;
+    protected int amount;
+    protected Card[] pack;
 
     public int getAmount() { return amount; }
     public void setAmount(int amount) { this.amount = amount; }
+    public Card[] getPack() { return pack; }
 }
 
+// 게임 중 아직 쓰이지 않은 덱
 class GameDeck extends Pack {
+    public GameDeck() {
+        amount = 0;
+        pack = new Card[21];
+    }
     private void reset() {
         this.setAmount(21);
     }
+    public Card throwCard() {
+        Card temp = pack[amount-1];
+        pack[amount-1] = null;
+        amount--;
+        return temp;
+    }
 }
 
+// 사용하고 들어간 무덤
 class Grave extends Pack {
-
-}
-
-class Field extends Pack {
-    private Card[] field = new Card[3];
-
-    public void getCardInField(Pack pack) {
-
+    public Grave() {
+        amount = 0;
+        pack = new Card[24];
     }
 
-    // 배율 판정
-    private boolean isNature() {  // 필드 세 카드 자연 속성이 다 같은지
-        String firstNature = field[0].getNature();
-        String secondNature = field[1].getNature();
-        String thirdNature = field[2].getNature();
+    public void die(Card dead) {
+        pack[amount] = dead;
+        amount++;
+    }
+}
+
+// 이번 턴에 사용될 카드 3장(필드)
+class Field extends Pack {
+    public Field() {
+        amount = 0;
+        pack = new Card[3];
+    }
+
+    public void deleteCard(int num) {
+        pack[num] = null;
+        amount--;
+    }
+
+    // 조합 판정
+    public boolean isNature() {  // 필드 세 카드 자연 속성이 다 같은지
+        String firstNature = pack[0].getNature();
+        String secondNature = pack[1].getNature();
+        String thirdNature = pack[2].getNature();
 
         return (firstNature.equals(secondNature) &&
                 secondNature.equals(thirdNature));
     }
 
-    private boolean isArcane() {  // 아케인(서로 다른 속성)
-        String firstNature = field[0].getNature();
-        String secondNature = field[1].getNature();
-        String thirdNature = field[2].getNature();
+    public boolean isArcane() {  // 아케인(서로 다른 속성)
+        String firstNature = pack[0].getNature();
+        String secondNature = pack[1].getNature();
+        String thirdNature = pack[2].getNature();
 
         return (!firstNature.equals(secondNature) &&
                 !secondNature.equals(thirdNature) &&
                 !firstNature.equals(thirdNature));
     }
 
-    private boolean isFlush() {  // 플러시 (모두 같은 직업군)
-        Card.Group firstGroup = field[0].getGroup();
-        Card.Group secondGroup = field[1].getGroup();
-        Card.Group thirdGroup = field[2].getGroup();
+    public boolean isFlush() {  // 플러시 (모두 같은 직업군)
+        Card.Group firstGroup = pack[0].getGroup();
+        Card.Group secondGroup = pack[1].getGroup();
+        Card.Group thirdGroup = pack[2].getGroup();
 
         return (firstGroup == secondGroup &&
                 secondGroup == thirdGroup);
     }
 
-    private boolean isDouble() {  // 더블 (두 개가 같은 직업)
-        String firstPosition = field[0].getPosition();
-        String secondPosition = field[1].getPosition();
-        String thirdPosition = field[2].getPosition();
+    public boolean isDouble() {  // 더블 (두 개가 같은 직업)
+        String firstPosition = pack[0].getPosition();
+        String secondPosition = pack[1].getPosition();
+        String thirdPosition = pack[2].getPosition();
 
         return ((firstPosition.equals(secondPosition) ||
                 secondPosition.equals(thirdPosition) ||
                 thirdPosition.equals(firstPosition)) && !this.isFlush());
     }
 
-    private boolean isStraight() {  // 스트레이트 (한 직업군의 모든 직업)
-        String firstPosition = field[0].getPosition();
-        String secondPosition = field[1].getPosition();
-        String thirdPosition = field[2].getPosition();
+    public boolean isStraight() {  // 스트레이트 (한 직업군의 모든 직업)
+        String firstPosition = pack[0].getPosition();
+        String secondPosition = pack[1].getPosition();
+        String thirdPosition = pack[2].getPosition();
 
         return (this.isFlush() && !firstPosition.equals(secondPosition) &&
                 !secondPosition.equals(thirdPosition) &&
                 !thirdPosition.equals(firstPosition));
     }
 
-    private boolean isTriple() {
-        String firstPosition = field[0].getPosition();
-        String secondPosition = field[1].getPosition();
-        String thirdPosition = field[2].getPosition();
+    public boolean isTriple() {
+        String firstPosition = pack[0].getPosition();
+        String secondPosition = pack[1].getPosition();
+        String thirdPosition = pack[2].getPosition();
 
         return (firstPosition.equals(secondPosition) &&
                 secondPosition.equals(thirdPosition));
     }
 }
 
+// 이번 턴에 사용하진 않고 잠시 저장해두는 카드 3장(핸드)
 class Hand extends Pack {
-
+    public Hand() {
+        amount = 0;
+        pack = new Card[3];
+    }
 }
