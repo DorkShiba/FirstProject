@@ -5,10 +5,16 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="4fb0ee20-14b7-4694-9034-33b2818b3ef2" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/Sample/Chap_6/Check Time.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Sample/Chap_6/Chap 6 이론문제.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Sample/Chap_6/Histogram.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/TripleFantasy/Board.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/TripleFantasy/Board.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/TripleFantasy/Deck.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/TripleFantasy/Deck.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Java_Workspace/Sample/Chap_6/Chap 6 필기.txt" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Java_Workspace/Sample/Chap_6/Chap 6 필기.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Java_Workspace/Sample/Chap_6/Check Time.txt" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Java_Workspace/Sample/Chap_6/Check Time.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Java_Workspace/Sample/Chap_6/_06_.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Java_Workspace/Sample/Chap_6/_06_.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Java_Workspace/TripleFantasy/Board.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Java_Workspace/TripleFantasy/Board.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Sample/Chap_6/Chap 6 필기.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/Sample/Chap_6/Chap 6 필기.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Sample/Chap_6/Check Time.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/Sample/Chap_6/Check Time.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Sample/Chap_6/_06_.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Sample/Chap_6/_06_.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -125,7 +131,13 @@
       <workItem from="1698054138650" duration="666000" />
       <workItem from="1698061451618" duration="51000" />
       <workItem from="1698062782959" duration="1845000" />
-      <workItem from="1698142474685" duration="8792000" />
+      <workItem from="1698142474685" duration="9080000" />
+      <workItem from="1698231213433" duration="1862000" />
+      <workItem from="1698316370234" duration="4920000" />
+      <workItem from="1698462771418" duration="11332000" />
+      <workItem from="1698488839208" duration="626000" />
+      <workItem from="1698548335745" duration="5625000" />
+      <workItem from="1698562182704" duration="4018000" />
     </task>
     <servers />
   </component>

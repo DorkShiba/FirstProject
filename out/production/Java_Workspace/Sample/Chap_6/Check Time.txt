@@ -4,3 +4,84 @@
 
 2. UsingCost 클래스는 Using 패키지에 포함, Cost 클래스 사용, 알맞은 코드
  -> package Using; import Book.Cost;
+
+--------------------------------------------------------------
+6-6
+1. 자바로 작성하는 모든 클래스가 반드시 자동 상속받는 클래스?
+ -> Object
+
+2. 다음 소스 실행 결과
+ -> a==b \n a==c \n a is equal to b
+
+--------------------------------------------------------------
+6-7
+1. char 타입의 문자를 객체화하는 Wrapper 클래스 이름?
+ -> Character
+
+2. 다음 코드 실행후 문자열 s?
+ -> 64
+
+3. 다음 코드 실행결과?
+ -> 100 0000 0000
+
+4. 다음 코드 실행결과? 코드 어디에서 자동 박싱/언박싱 발생?
+ -> 110  //  첫줄과 둘째줄에서 자동 박싱, 셋째줄에서 자동 언박싱
+
+--------------------------------------------------------------
+6-8
+1. "My name is Tom."에 포함된 공백문자 갯수 세는 코드
+ -> String a = "My name is Tom.";
+int sum = 0;
+for (int i = 0; i < a.length(); i++) {
+    if (a.charAt(i) == ' ' || a.charAt(i) == '\t' || a.charAt(i) == '\n' || a.charAt(i) == '\r') {
+        sum += 1;
+    }
+}
+System.out.println(sum);
+
+2. 다음 코드 실행결과
+ -> abcdefg
+
+3. 다음 코드 실행결과
+ -> d
+
+4. String 객체 생성방법 잘못된것
+ -> str4
+
+5. System.out.print("자바" + 3.14 + false + 'a')의 실행결과
+ -> 자바3.14falsea
+
+--------------------------------------------------------------
+6-9
+1. StringBuffer 클래스 설명 잘못된것
+ -> 2번 "StringBuffer 객체에 저장된 문자열 변경 불가"
+
+2. 다음코드 실행결과
+ -> My name is Tom.
+
+3. 다음처럼 출력되게 코드 삽입
+ -> sb.insert(5, "not ");
+
+--------------------------------------------------------------
+6-10
+1. 토큰 출력 코드 작성
+ -> String str = "냉장고,세탁기,에어컨,TV,오디오";
+StringTokenizer st = new StringTokenizer(str, ",");
+int n = st.countTokens();
+for (int i = 0; i < n; i++) { System.out.println(st.nextToken()); }
+
+2. 스트링 토크나이저로 수식 문자열 합 계산 코드 작성
+ -> String str = "2+3+5+66+88+323";
+StringTokenizer st = new StringTokenizer(str, "+");
+int n = st.countTokens();
+int sum = 0;
+for (int i = 0; i < n; i++) { sum += st.nextToken(); }
+System.out.printlne(sum);
+
+--------------------------------------------------------------
+6-11
+1. 코드 실행 결과
+ -> 3
+
+2. 코드 실행 결과
+ -> -11.0

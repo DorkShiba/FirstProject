@@ -1,0 +1,95 @@
+1. import에 대한 문답
+ 1) import문 언제사용, 의미하는 바?
+  -> 다른 패키지에 있는 클래스/인터페이스 사용할 때, 사용하는 클래스/인터페이스의 주소를 의미함
+ 2) import java.util.Random / import java.util.*의 의미
+  -> 전자는 java.util 패키지의 Random 클래스만 import, 후자는 그 패키지의 모든 클래스/인터페이스 import
+ 3) import 문 없이도 자바 프로그램 작성 가능?
+  -> 가능
+ 4) 어떤 패키지에 속한 클래스는 import 문 없이 사용 가능?
+  -> 같은 패키지
+
+2. 패키지에 대한 설명중 잘못된 것
+ -> 4번 "자바 JDK는 클래스들을 모두 하나의 패키지에 담아 제공한다."  // 여러개의 모듈로 나눠서 제공함
+
+3. import문 사용안하고 다시 작성
+ -> public class Example {
+    public static void main(String[] args) {
+        java.util.StringTokenizer st = new java.util.StringTokenizer("a=3,b=5,c=6", ",");
+        while (st.hasMoreTokens()){
+            System.out.println(st.nextToken());
+        }
+    }
+}
+
+4. 다음처럼 출력되게 코드 수정
+ -> import java.util.StringTokenizer;
+public class Example {
+    public static void main(String[] args) {
+        StringTokenizer st = new StringTokenizer("a=3,b=5,c=6", ",=");
+        int sum = 0;
+        while (st.hasMoreTokens()) {
+            String s = st.nextToken();
+            System.out.println(s);
+            try {
+                sum += Integer.parseInt(s);
+            } catch (NumberFormatException e) { continue; }
+        }
+        System.out.println("합은 " + sum);
+    }
+}
+
+5. 다음 물음에 답하라
+ 1) 다음 클래스를 device 패키지에 속하게 코드 작성
+  -> package device;
+ 2) 앞의 TV 클래스 활용하는 Home 클래스를 app 패키지에 저장, 코드 작성
+  -> package app; import device.TV;
+ 3) TV 클래스와 Home 클래스 컴파일한 두 파일 경로명
+  -> device.TV.class / app.Home.class
+
+6. Wrapper 클래스 문답
+ 1) 정수 20을 문자열 s1에 "20"으로 저장하는 코드
+  -> String s1 = Integer.toString(20);
+ 2) 문자열 "35.9"를 double 타입 변수 d에 저장하는 코드
+  -> double d = Double.parseDouble("35.9");
+ 3) "true" 문자열을 boolean 타입 변수 b에 저장하는 코드
+  -> boolean b = Boolean.parseBoolean("true");
+ 4) 정수 30을 이진수 문자열로 변환해 s2에 저장하는 코드
+  -> String s2 = Integer.toBinaryString(30);
+ 5) 문자 'c'를 문자열로 변환해 변수 c에 저장하는 코드
+  -> String c = Character.toString('c');
+
+7. 다음코드 실행결과와 그 이유
+ -> true \n false // a는 리터럴을 가리키고, b는 그 리터럴을 바탕으로 한 객체를 가리킨다.
+                     == 연산자는 가리키는 대상이 같은지를 판단하므로 위의 건 true, 밑의 건 false
+
+8. 다음 코드 실행후 a, b, c 문자열은 무엇?
+ -> a = "     Oh, Happy     ", b = "Oh, Happy", c = Oh, Happy Day."
+
+9. 다음 코드 문답
+ 1) a와 ==연산 true인 문자열 b ~ f 중
+  -> b
+ 2) f와 equals()연산 true인 문자열
+  -> c, e
+
+10. 자동 박싱/언박싱 부분 파악
+ -> 자동 박싱: 1) / 자동 언박싱: 2)
+
+11. 100 <= x <= 255인 난수 x 10개 발생 코드
+ 1) Math 클래스 활용 코드 삽입
+  -> (int)(Math.random() * 156 + 100)
+ 2) Random 클래스 활용
+  -> Random r = new Random();
+for (int i = 0; i < 10; i++) {
+    int j = r.nextInt(155) + 100;
+    System.out.print(j);
+    System.out.print(" ");
+}
+
+12. 주석에 맞게 코드 작성
+Calendar date = Calendar.getInstance();
+date.clear();
+date.set(Calendar.YEAR, 2020);
+date.set(Calendar.MONTH, 11);
+date.set(Calendar.DAY_OF_MONTH, 25);
+System.out.println("약속 날짜는 " + date.get(Calendar.YEAR) + "년 " +
+                  (date.get(Calendar.MONTH) + 1) + "월 " + date.get(Calendar.DAY_OF_MONTH) + "일");

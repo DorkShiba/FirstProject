@@ -1,9 +1,13 @@
 package Sample.Chap_6;
 
+import java.util.Calendar;
+import java.util.StringTokenizer;
+
 public class _06_ {
     public static void main(String[] args) {
-        int a = 2;
-        a = (int)Math.ceil(a * 2.7);
-        System.out.println(a);
+        String a = "abc";
+        System.out.println(a == "abc");
+        String b = new String(a);
+        System.out.println(a == b);
     }
 }
