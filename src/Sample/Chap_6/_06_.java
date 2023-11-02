@@ -5,9 +5,10 @@ import java.util.StringTokenizer;
 
 public class _06_ {
     public static void main(String[] args) {
-        String a = "abc";
-        System.out.println(a == "abc");
-        String b = new String(a);
-        System.out.println(a == b);
+        StringBuffer sb = new StringBuffer();
+        sb.append("abc def");
+        String str = sb.toString();
+        String a = "xy";
+        System.out.println(sb.indexOf(a));
     }
 }
