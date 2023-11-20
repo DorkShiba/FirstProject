@@ -1,0 +1,354 @@
+8장 입출력 스트림과 파일 입출력
+
+--------------------------------------------------------------
+8-1 자바의 입출력 스트림
+1. 스트림 입출력이란?
+ - 스트림(stream): 연속적인 데이터의 흐름 혹은 데이터를 전송하는 소프트웨어 모듈
+ - 자바의 입출력 스트림: 응용프로그램과 입출력 장치를 연결하는 소프트웨어 모듈
+ - 스트림 입출력 방식에서, 자바 응용프로그램은 입출력 장치를 직접 제어x, 입출력 스트림 객체와 연결해 쉽게 이를 실행함
+ - 입출력 스트림의 특징들
+  1) 스트림 양 끝에는 입출력 장치와 자바 응용프로그램이 연결됨
+   - 자바 응용프로그램은 입/출력 스트림만 연결
+   - 해당 스트림이 입출력 장치 제어 및 실질적 입출력 담당
+  2) 스트림은 단방향
+   - 입력 스트림은 입력 장치 -> 응용프로그램
+   - 출력은 응용프로그램 -> 출력장치 로 데이터 전송
+   - 두가지 다 하는 건 없음
+  3) 스트림을 통해 흘러가는 기본 단위는 바이트나 문자
+   - 자바 스트림 객체는 바이트 스트림, 문자 스트림으로 나뉨
+    - 바이트 단위로 입출력 / 문자 단위로 입출력
+  4) 스트림은 선입선출(FIFO) 구조
+   - 먼저 들어온 데이터가 먼저 전달
+
+2. 바이트 스트림과 문자 스트림
+ - 문자 스트림은 문자만 다룸
+  -> 문자 아닌 데이터 출력 시, 안 보이거나 엉뚱한 기호 출력
+  -> 문자 아닌 정보 입력 시 엉뚱한 문자 전달되는 오류
+  - char 타입 하나 크기는 2바이트
+ - 바이트 스트림은 바이트를 단위로 다룸
+  - 스트림에 입출하는 단순 바이너리(비트들)로 다룸
+   -> 문자든 이미지든 상관없이 흘려보냄
+ - 자바 플랫폼은 java.io 패키지에 스트림 입출력 할 수 있는 다양한 클래스 제공
+  - 바이트 스트림 클래스는 이름 뒤에 Stream을 붙임
+  - 문자 스트림 클래스는 Reader/Writer를 붙여 구분
+
+* 입출력 스트림 클래스 계층 구조
+ a) 바이트 스트림
+InputStream
+ - FileInputStream
+ - FilterInputStream
+  - BufferedInputStream
+  - DataInputStream
+  - LineNumberInputStream
+  - PushbackInputStream
+ - PipedInputStream
+ - SequenceInputStream
+ - ByteArrayInputStream
+ - StringBufferInputStream
+ - ObjectInputStream
+
+OutputStream
+ - FileOutputStream
+ - FilterOutputStream
+  - BufferedOutputStream
+  - DataOutputStream
+  - PrintStream
+ - PipedOutputStream
+ - ByteArrayOutputStream
+ - ObjectOutputStream
+
+ b) 문자 스트림
+Reader
+ - InputStreamReader
+  - FileReader
+ - BufferedReader
+  - LineNumberReader
+ - FilterReader
+  - PushbackReader
+ - CharArrayReader
+ - PipedReader
+ - StringReader
+
+Writer
+ - OutputStreamWriter
+  - FileWriter
+ - BufferedWriter
+ - FilterWriter
+ - CharArrayWriter
+ - PipedWriter
+ - StringWriter
+
+3. 스트림 연결
+ - 스트림은 서로 연결 가능
+  ex) InputStreamReader rd = new InputStreamReader(System.in);
+   - 위 코드는 문자 스트림 rd 생성 후, 키보드와 연결된 표준 입력 스트림인 System.in을 연결함
+   - System.in은 InputStream 타입(바이트 입력스트림)
+   - System.in이 입력받아 바이트 스트림으로 보냄
+    -> rd가 이를 받아 문자로 구성해 문자 스트림으로 응용프로그램에 보냄
+   - int c = rd.read();와 같이 입력한 문자 읽기 가능
+
+--------------------------------------------------------------
+8-2 문자 스트림과 파일 입출력
+1. 문자 스트림 클래스
+ - 문자 스트림: 2바이트의 유니코드 문자를 단위로 입출력하는 스트림
+  - 문자화되지 않는 바이너리 바이트 값들은 문자 스트림 클래스에서 처리 불가
+  - 바이트들 전달받고 이들이 로컬 문자 집합에 있는 문자인지 비교 -> 문자 변환
+   - if 집합에 없으면, 문자가 아님 or 다른 언어 문자들 or 문자 집합 잘못 설정
+
+2. FileReader를 이용한 텍스트 파일 읽기
+ 1) 파일 입력 스트림 생성
+  - FileReader fin = new FileReader("c:\\test.txt");
+   - 파일 입력 스트림 생성 후, c:\test.txt 파일을 연결함
+  - FileReader 생성자는 매개변수의 파일을 찾아 열고, 파일과 스트림 연결
+   - 해당 파일은 문자들로만 구성된 텍스트 파일
+ 2) 파일 읽기
+  - fin.read()는 연결된 파일로부터 문자하나를 읽어 리턴, 파일의 끝(EOF)를 만나면 -1 리턴
+  - 파일이 큰 경우, 한 번에 한 문자씩 읽으면 너무 느림
+   -> 한 번에 한 블록(버퍼크기)만큼 읽도록 함
+    ex) char[] buf = new char[1024]; int n = fin.read(buf);
+   - 버퍼란, 읽고 쓸 데이터를 저장하는 배열을 부르는 말
+ 3) 스트림 닫기
+  - close()메소드로 파일입력 스트림을 닫음
+ 4) 생성자 및 메소드
+  - FileReader의 생성자
+   - FileReader(File file): file로 부터 읽는 FileReader 생성
+   - FileReader(String nema): name이름의 파일로부터 읽는 객체 생성
+  - FileReader, Reader, InputStreamReader의 공통 주요 메소드
+   - int read(): 한 개 문자를 읽어 정수형으로 리턴
+   - int read(char[] cbuf): 문자들을 읽어 cbuf 배열에 저장, 읽은 갯수 리턴
+   - int read(char[] cbuf, int off, int len): 최대 len 갯수 문자들 읽어 cbuf 배열 off 위치부터 저장, 읽은 갯수 리턴
+   - String getEncoding(): 스트림이 사용하는 문자 집합 이름 리턴
+   - void close(): 입력 스트림 닫기
+
+3. 파일 입출력과 예외처리
+ - 파일 입출력 중 예외 발생 가능
+  1) FileNotFoundException: 파일의 경로명이 틀린 경우 FileReader 생성자가 발생시킴
+  2) IOException: 파일 읽기, 쓰기, 닫기 중 입출력 오류 발생 시 read(), write(), close() 메소드가 발생시킴
+   -> try-catch 블록 필요
+    ex) try {
+    FileReader fin = new FileReader("c:\\test.txt");
+    int c = fin.read();
+    fin.close();
+} catch(FileNotFoundException e) {  // 생략가능. FileNotFoundException은 IOException을 상속받음
+    System.out.println("File not found");
+} catch(IOException e) {
+    System.out.println("IO error");
+}
+
+4. 문자집합과 InputStreamReader(이후 ISR)를 이용한 텍스트 파일 읽기
+ - ISR은 스트림에 입력되는 바이트 데이터를 문자 집합을 통해 문자로 변환
+  -> 객체 생성자에 문자 집합을 지정해야 함
+ - ISR 생성자
+  - InputStreamReader(InputStream in): in으로부터 읽는 기본 문자 집합의 객체 생성
+  - InputStreamReader(InputStream in, Charset cs): in으로부터 읽는 cs 문자집합의 객체 생성
+  - InputStreamReader(InputStream in, String charsetName): in으로부터 읽는 charsetName 문자집합의 객체 생성
+ 1) ISR로 문자 입력 스트림 생성
+  - ISR는 바이트 스트림을 전달받아 문자 정보로 변환하는 스트림
+   -> 텍스트 파일을 읽으려면, 바이트 파일 입력 스트림을 먼저 생성, 그후 ISR 생성
+    ex) FileInputStream fin = new FileInputStream("hangul.txt");
+        InputStreamReader in = new InputStreamReader(fin, "MS949");
+    - 윈도우 메모장에서 한글 텍스트는 디폴트로 MS 사의 '한글 확장 완성형 문자 집합'의 코드로 저장함
+    - 윈도우에서 디폴트 문자집합은 MS949 -> 위 생성자에서 이를 문자집합으로 지정
+ 2) 파일 읽기
+  - read() 메소드는 문자 집합 인코딩 규칙에 따라 fin에게 파일로부터 필요한 바이트를 읽게 지시
+   -> 이를 문자 집합 속 문자인지 확인 후 리턴
+
+5. FileWriter를 이용한 텍스트 파일 작성
+ - FileWriter(이하 FW)와 OutputStreamWriter(이하 OSW)의 생성자
+  - OutputStreamWriter(OutputStream out): out에 출력하는 기본 문자 집합의 OSW 생성
+  - ""(OutputStream out, Charset cs): out에 출력하는 cs 문자 집합의 OSW 생성
+  - ""(OutputStream out, String charsetName): out에 출력하는 charsetName 문자 집합의 OSW 생성
+  - FileWriter(File file): file에 데이터를 저장할 FW 생성
+  - ""(String name): name 파일에 데이터를 저장할 FW 생성
+  - ""(File file, boolean append): file에 데이터를 저장할 FW 생성, append가 true면 파일 마지막부터 데이터 저장
+  - ""(String name, boolean append): name 파일에 데이터를 저장할 FW 생성, append가 true면 파일 마지막부터 데이터 저장
+ - FW와 OSW의 주요 메소드
+  - void write(int c): c를 char로 변환해 한 개의 문자 출력
+  - ""(String str): 문자열 str 출력
+  - ""(String str, int off, int len): off 위치부터 len 개의 문자를 str 문자열에서 출력
+  - ""(char[] cbuf, int off, int len): off 위치부터 len 개의 문자를 cbuf 배열에서 출력
+  - void flush(): 스트림에 남은 모든 데이터 출력
+  - String getEncoding(): 스트림이 사용하는 문자 집합 이름 리턴
+  - void close(): 출력 스트림 폐쇄
+ 1) 파일 출력 스트림 생성
+  - FileWriter fout = new FileWriter("C:\\Temp\\test.txt");
+  - 위 파일을 열어 스트림과 연결, 파일이 없으면 빈 파일 생성, 이미 파일 있으면 파일 내용 지우고 첨부터 쓸 준비
+ 2) 파일 작성
+  - write() 메소드 이용 -> 문자 단위로 파일에 저장
+   ex) fout.write('A');
+  - 문자 배열 이용시, 한번에 한 블록씩 작성가능
+
+--------------------------------------------------------------
+8-3 바이트 스트림과 파일 입출력
+1. 바이트 스트림 클래스
+ - 바이트 단위로 바이너리 데이터가 흐르는 스트림
+ - 대표적 바이트 입출력 스트림 클래스
+  1) InputStream/OutputStream
+   - 추상 클래스
+   - 바이트 입출력 처리의 공통 기능을 가진 슈퍼 클래스
+  2) FileInputStream/FileOutputStream
+   - 파일 입출력 클래스
+   - 파일로부터 바이너리 데이터를 읽거나 파일에 저장
+  3) DataInputStream/DataOutputStream
+   - 기본 타입 값들을 바이너리 형태로 입출력
+   - 문자열도 바이너리 형태로 입출력
+
+2. FileOutputStream(이하 FOS)을 이용한 바이너리 파일 쓰기
+ - 프로그램 내 변수나 배열에 든 바이너리 값을 그대로 파일에 저장하는 경우에 좋음
+  ex) 메모리에 있는 이미지 비트들을 이미지 파일로 저장하는 경우
+ - FOS 클래스 생성자
+  - FileOutputStream(File file): file 파일에 출력하는 FOS 생성
+  - ""(String name): name 이름의 파일에 출력하는 객체
+  - ""(File file, boolean append): file 파일에 출력하며, append true이면 파일 마지막부터 데이터 저장
+  - ""(String name, boolean append): name 이름의 파일에 출력, append true이면 파일 마지막부터 데이터 저장
+ - OutputStream과 FOS의 공통 주요 메소드
+  - void write(int b): int 형으로 넘겨진 한 바이트 출력
+  - ""(byte[] b): 배열 b의 바이트 모두 출력
+  - ""(byte[] b, int off, int len): len 크기만큼 off 위치부터 배열 b를 출력
+  - void flush(): 출력 스트림에 남은 모든 바이너리 데이터 출력
+  - void close(): 출력 스트림 폐쇄
+ 1) 파일 출력 스트림 생성
+  - c:\Temp\test.out에 바이너리 데이터 저장하는 출력 스트림 생성
+   - FileOutputStream fout = new FileOutputStream("c:\\Temp\\test.out");
+  - 해당 파일 생성 후 연결, 이미 있으면 내용 지움
+ 2) 파일 쓰기
+  - write() 메소드를 이용해 한 바이트씩 배열 데이터 기록
+   - byte b[] = {7, 51, 3, 4, -1, 24};
+for (int i = 0; i < b.length; i++) {
+    fout.write(b[i]);
+}
+  - for 문없이 한번에 저장도 가능
+   - fout.write(b);
+
+3. FileInputStream(이하 FIS)을 이용한 바이너리 파일 읽기
+ - FIS 생성자
+  - FileInputStream(File file): file 파일로부터 읽는 FIS 객체 생성
+  - FileInputStream(String name): name 파일로부터 읽는 객체 생성
+ - InputStrea과 FIS 공통 주요 메소드
+  - int read(): 한 바이트를 읽어 int 형으로 리턴
+  - ""(byte[] b): 최대 배열 b의 크기만큼 바이트 읽음, 도중에 EOF 만나면 실제 읽은 바이트 수 리턴
+  - ""(byte[] b, int off, int len): 최대 len개의 바이트를 읽어 b 배열 off 위치부터 저장, EOF만나면 실제 읽은 바이트 수 리턴
+  - int available(): 입력 스트림에서 현재 읽을 수 있는 바이트 수 리턴
+  - void close(): 입력 스트림 폐쇄
+
+3. 파일 입력 스트림 생성
+ - FileInputStream fin = new FileInputStream("c:\\Temp\\test.out");
+ - test.out 파일로부터 바이너리 값을 그대로 읽어들이는 스트림 생성 코드
+ 1) 파일 읽기
+  - fin.read() 메소드로 한 바이트를 읽어 리턴
+  - 파일에 저장된 바이트들을 읽어 배열 byte b[]에 저장하는 코드
+   - byte[] b = new byte [6];
+int n = 0, c;
+while ((c = fin.read()) != -1) {
+    b[n] = (byte) c;
+    n++;
+}
+   - 파일의 끝(EOF)를 만나면 fin.read()는 -1을 리턴함
+   - 코드 끝 다섯 줄(n, c 선언부터 while문 끝)은 다음 코드로 전환 가능
+    - fin.read(b); // 파일에서 배열 b[]크기만큼 바이트 읽기
+
+--------------------------------------------------------------
+8-4 버퍼 입출력과 파일 입출력
+1. 버퍼 입출력의 필요성
+ - 입출력 스트림은 운영체제 API를 호출해 입출력 장치와 프로그램 사이에서 데이터 전송
+  -> 입출력 메소드는 운영체제 API 호출해 파일에 작성 명령
+  -> 운영체제 API는 하드 디스크에 명령 하달 후 파일에 데이터 기록
+  -> 자주 API가 호출될수록 하드 디스크나 네트워크 장치 자주 작동
+  -> 시스템 효율 하락, 입출력 실행속도 하락
+  ==>> 버퍼(buffer)를 이용해 더 효율적으로 작동하게 한다!
+ - 버퍼
+  - 데이터를 일시적으로 저장하기 위한 메모리
+  - 파일 출력 스트림이 파일에 쓸 데이터를 버퍼에 모아둠
+   -> 한 번에 운영체제 API를 호출해 작성하게 함
+ - 위에서 배운 스트림은 버퍼를 가지지 않는 unbuffered IO 방식
+ - buffered IO(버퍼 입출력)처럼 버퍼를 가지는 스트림을 버퍼 스트림(buffered stream)이라 함
+
+2. 버퍼 스트림 생성 및 활용
+ - 바이트 버퍼 스트림 클래스 생성자
+  - BufferedInputStream(InputStream in): in을 연결하는 디폴트 크기의 입력 버퍼 스트림 객체 생성
+  - BufferedInputStream(InputStream in, int size): in을 연결하는 size 크기의 객체 생성
+  - BufferedOutputStream(OutputStream out): out을 연결하는 디폴트 크기의 출력 버퍼 스트림 객체 생성
+  - BufferedOutputStream(OutputStream out, int size): out을 연결하는 size 크기의 객체 생성
+ - 문자 버퍼 스트림 클래스 생성자
+  - BufferedReader(Reader in): in을 연결하는 디폴트 크기 문자 입력 버퍼 스트림 생성
+  - BufferedReader(Reader in, int sz): in을 연결하는 sz 크기 문자 입력 버퍼 스트림 생성
+  - BufferedWriter(Writer out): out을 연결하는 디폴트 크기 문자 입력 버퍼 스트림 생성
+  - BufferedWriter(Writer out, int sz): out을 연결하는 sz 크기 문자 입력 버퍼 스트림 생성
+ 1) 버퍼 출력 스트림 생성
+  - BufferedOutputStream bout = new BufferedOutputStream(System.out, 20); // 20바이트 버퍼
+  - 20바이트 크기 버퍼를 가지고, 표준 출력 스트림에 연결하는 버퍼 스트림 생성 코드
+ 2) 스트림 출력
+  - FileReader fin = new FileReader("c:\\windows\\system.ini");
+int c;
+while ((c = fin.read()) != -1) {
+    bout.write((char) c);  // 읽은 문자를 버퍼 스트림에 쓴다. 출력 스트림과 연결된 화면에 출력된다.
+}
+  - system.ini 파일을 읽어 버퍼 출력 스트림을 통해 화면에 출력하는 코드
+ 3) 버퍼에 남은 데이터 출력
+  - bout.flush();
+  - 버퍼 스트림은 버퍼를 가짐
+   -> 버퍼가 꽉 차야만 출력됨
+   -> 프로그램에서 데이터 출력했지만 버퍼에 들어있어 출력 장치에 안 보이는 경우 발생
+   -> flush() 메소드는 다 차지 않은 버퍼에서 안의 데이터를 강제로 출력 장치로 보냄
+
+--------------------------------------------------------------
+8-5 File 클래스
+1. File 클래스란?
+ - File 클래스
+  - 파일이나 디렉터리에 대한 경로명, 크기, 타입, 수정 날짜 등의 속성 정보 제공
+  - 파일 삭제, 디렉터리 생성, 파일 이름 변경, 디렉터리 내 파일 리스트 제공 등의 파일 관리 작업 지원
+  - java.io.File
+  - 파일 입출력 기능은 없음
+
+2. File 객체 생성
+ - 생성자
+  - File(File parent, String child): parent 디렉터리에 child 이름의 서브 디렉터리나 파일 나타내는 객체 생성
+  - File(String pathname): pathname의 완전 경로명이 나타내는 객체 생성
+  - File(String parent, String child): parent 디렉터리에 child 이름의 서브 디렉터리나 파일 나타내는 객체 생성
+  - File(URI uri): file:URI를 추상 경로명으로 변환해 객체 생성
+ - 예시
+  - File f = new File("c:\\Temp\\test.txt");
+  - File f = new File("c:\\Temp", "test.txt");
+
+3. File 클래스를 이용한 파일 및 디렉터리 관리
+ - File 클래스의 메소드를 이용하면
+  - 파일 크기, 타입 알 수 있고
+  - 파일 삭제, 이름 변경, 디렉터리 생성, 파일 리스트 획득 가능
+ - 주요 메소드
+  - boolean mkdir(): 새 디렉터리 생성
+  - String[] list(): 디렉터리 내 파일/서브 디렉터리 리스트 담은 문자열 배열 리턴
+  - File[] listFiles(): 디렉터리 내 파일/서브 디렉터리 리스트 담은 File 배열 리턴
+  - boolean renameTo(File dest): dest가 지정하는 경로명으로 파일 이름 변경
+  - boolean delete(): 파일/디렉터리 삭제
+  - long length(): 파일 크기 리턴
+  - String getPath(): 경로명 전체를 문자열로 리턴
+  - String getParent(): 파일/디렉터리의 부모 디렉터리 이름 문자열 리턴
+  - String getName(): 파일/디렉터리 이름 문자열 리턴
+  - boolean isFile(): 일반 파일인지 리턴
+  - boolean isDirectory(): 디렉터리인지 리턴
+  - long lastModified(): 파일이 마지막으로 변경된 시간 리턴
+  - boolean exists(): 파일/디렉터리가 존재하는지 리턴
+ 1) 파일 크기, length()
+  - File f = new File("c:\\windows\\system.ini");  // 파일 크기는 219 바이트
+long size = f.length();  // 219
+  - 파일 부재, 디렉터리 혹은 운영체제 종속적인 장치 파일의 경우
+    운영체제에 따라 0을 리턴하기도 함
+ 2) 파일 경로명, getName(), getPath(), getParent()
+  - getName(): 파일명만
+  - getPath(): 완전경로명
+  - getParent(): 부모 디렉터리를 문자열로
+   - ex) String filename = f.getName();  // "system.ini"
+String path = f.getPath();  // "c:\\windows\\system.ini"
+String parent = f.getParent();  // "c:\\windows"
+ 3) 파일 타입 판별, isFile(), isDirectory()
+  - 경로명이 파일인지 디렉터리인지에 따라 true/false 리턴
+ 4) 디렉터리에 있는 파일 리스트, listFiles()
+  - File 객체가 디렉터리의 경로명을 가진 경우,
+    디렉터리 내 모든 파일/서브 디렉터리의 리스트 얻기 가능
+  - list()는 문자열 배열, listFiles()는 File 배열로 리턴한다
+
+--------------------------------------------------------------
+8-6 파일 입출력 응용: 파일 복사
+ - 파일 복사 프로그램 작성 소개
+ - 파일은 텍스트 파일(문자들로 이루어짐), 바이너리 파일(이미지, 오디오, 그래픽 등 바이너리 코드로 이루어짐)으로 나뉨
+1. 텍스트 파일 복사

@@ -1,0 +1,79 @@
+1. 컬렉션 설명 틀린 것
+ -> 3번 "객체들만 삽입되어 int같은 기본 타입 값 저장 방법 없다"  // Wrapper 클래스로 저장 가능
+
+2. 클래스, 인터페이스, 메소드를 특정 타입에 종속되지 않게 [일반화]시켜 작성하는
+기술을 [제네릭]이라 한다. Vector<E>에서 E는제네릭 타입 혹은 [타입 매개변수]라고 부른다.
+E에 Integer 등과 같이 객체 타입을 지정하여 특정 타입의 데이터만 다루도록
+만드는 작업을 [구체화]라고 한다. 제네릭 기능은 C++에서 먼저 만들어졌으며
+C++에서는 [템플릿]이라고 부른다.
+
+3. 다음 코드 설명 틀린것
+ -> 2번 "벡터 v는 원소 30개만 저장 가능"  // 초기 용량을 그리 정했을 뿐, 요소가 초과되면 자동으로 용량을 늘린다
+
+4. 다음 물음 적합코드 작성
+ 1) 문자열 저장 벡터 sv 생성
+  -> Vector<String> sv = new Vector<>();
+ 2) 키 문자열, 값 실수인 해시맵 h 생성
+  -> HashMap<String, Value> h = new HashMap<>();
+ 3) Person 타입 객체 10개 저장 공간 갖춘 어레이리스트 컬렉션 pa 생성
+  -> ArrayList<Person> pa = new ArrayList<>(10);
+ 4) 나라이름, 인구 저장 관리하는 해시맵 pop 생성
+  -> HashMap<String, Integer> pop = new HashMap<>();
+
+5. 다음 코드 중 맞는 것
+ -> 1번 "Stack<String> ss;"
+
+6. 다음 코드에서 자동 박싱/언박싱 위치 지적
+ -> 자동 박싱: v.add(3.14);  // 자동 언박싱: double d = v.get(0);
+
+7. 프로그램 실행 후 벡터 용량 변화 확인, 모자라면, 얼마씩 용량을 늘리나?
+ -> 12  // 두 배
+
+8. 코드 삽입
+ -> ArrayList<String> a = new ArrayList<>(10);  // 초기 용량 10인 어레이리스트 생성
+a.add("Java");  // a 맨 끝에 "Java" 삽입
+a.add(0, "C++");  // a 맨 앞에 "C++" 삽입
+System.out.println(a.size()); // a에 현재 삽입된 갯수 출력
+a.remove(a.size() - 1);  // a 마지막 문자열 삭제
+
+9. 다음 코드 Iterator로 재작성
+ -> Vector<Integer> v = new Vector<>();
+for (int i = 0; i < 10; i++) { v.add(i); }
+Iterator<Integer> it = v.iterator();
+while (it.hasNext()) {
+    System.out.print(it.next() + " ");
+}
+
+10. 다음 코드에서 func() 메소드 작성
+ -> <K, V> int func(HashMap<K, V> h) {
+    return h.size();
+}
+
+11. 제네릭 클래스 문답
+ 1) 위 클래스 타입 매개변수 갯수, 무엇?
+  -> W, 1개
+ 2) String 구체화한 객체 생성 코드
+  -> JGeneric<String> jg = new JGereric<>();
+ 3) 첫번째 값 x 리턴 메소드 first() 작성
+  -> public W first() { return x; }
+ 4) 두번째 값 y 리턴 메소드 second() 작성
+  -> public W second() { return y; }
+ 5) equal() 메소드 작성 x, y 같으면 true
+  -> public boolean equal() { return x == y; }
+ 6) <W>를 String으로 구체화한 JGeneric 객체 활용례
+  ->
+
+12. 다음 문답
+ 1) take() 메소드는 뭐하는 코드?
+  -> s String 배열의 index 위치의 요소를 가져오는 메소드
+ 2) take() 메소드를 일반화하라
+  -> static <E> E take(E arr[], int index) {
+    if (index > s.length - 1) {
+        System.out.println("인덱스가 범위 벗어남");
+        return null;
+    }
+    return s[index];
+}
+ 3) 클래스 활용례
+String[] alphabet = {"a", "b", "c"};
+System.out.println(JClass.take(alphabet, 0));

@@ -5,8 +5,81 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="4fb0ee20-14b7-4694-9034-33b2818b3ef2" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/Sample/Chap_7/WordQuiz.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/CodeItJava/DynamicArrayEx.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/CodeItJava/LinkedListEx.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Sample/Chap_7/Chap 7 이론문제.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Sample/Chap_7/PracticalProblem/Average.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Sample/Chap_7/PracticalProblem/CapitalQuiz.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Sample/Chap_7/PracticalProblem/GraphicEditor.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Sample/Chap_7/PracticalProblem/LocationManage.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Sample/Chap_7/PracticalProblem/MaxInt.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Sample/Chap_7/PracticalProblem/MyProgram.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Sample/Chap_7/PracticalProblem/PointManage.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Sample/Chap_7/PracticalProblem/PopulationSearch.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Sample/Chap_7/PracticalProblem/Precipitation.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Sample/Chap_7/PracticalProblem/ScholarshipManage.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Sample/Chap_7/PracticalProblem/StackManager.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Sample/Chap_7/PracticalProblem/StudentManage.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Sample/Chap_8/Chap 8 이론문제.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Sample/Chap_8/Chap 8 필기.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Sample/Chap_8/Check Time.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Sample/Chap_8/HangMan.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Sample/Chap_8/_08_.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Sample/Chap_8/test.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Sample/Chap_8/words.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Sample/Chap_8/write.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Java_Workspace/Chap_01/_01_HelloWorld.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Java_Workspace/Chap_01/_02_DataTypes.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Java_Workspace/Chap_01/_03_Variables.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Java_Workspace/Chap_01/_04_Comment.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Java_Workspace/Chap_01/_05_VariablesName.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Java_Workspace/Chap_01/_06_Constants.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Java_Workspace/Chap_01/_07_TypeCasting.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Java_Workspace/Chap_01/_Quiz_01.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Java_Workspace/Chap_02/_01_Operator1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Java_Workspace/Chap_02/_02_Operator2.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Java_Workspace/Chap_02/_03_Operator3.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Java_Workspace/Chap_02/_04_Operator4.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Java_Workspace/Chap_02/_05_Operator5.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Java_Workspace/Chap_02/_Quiz_02.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Java_Workspace/Chap_03/_01_String1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Java_Workspace/Chap_03/_02_String2.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Java_Workspace/Chap_03/_03_StringCompare.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Java_Workspace/Chap_03/_04_EscapeSequence.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Java_Workspace/Chap_03/_Quiz_03.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Java_Workspace/Chap_04/_01_If.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Java_Workspace/Chap_04/_02_Else.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Java_Workspace/Chap_04/_03_ElseIf.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Java_Workspace/Sample/Chap_7/A.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Java_Workspace/Sample/Chap_7/Word.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Java_Workspace/Sample/Chap_7/Word.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Java_Workspace/Sample/Chap_7/WordQuiz.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Java_Workspace/Sample/Chap_7/WordQuiz.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Java_Workspace/Sample/Chap_7/_07_.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Java_Workspace/Sample/Chap_7/_07_.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Chap_01/_01_HelloWorld.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Chap_01/_02_DataTypes.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Chap_01/_03_Variables.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Chap_01/_04_Comment.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Chap_01/_05_VariablesName.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Chap_01/_06_Constants.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Chap_01/_07_TypeCasting.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Chap_01/_Quiz_01.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Chap_02/_01_Operator1.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Chap_02/_02_Operator2.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Chap_02/_03_Operator3.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Chap_02/_04_Operator4.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Chap_02/_05_Operator5.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Chap_02/_Quiz_02.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Chap_03/_01_String1.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Chap_03/_02_String2.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Chap_03/_03_StringCompare.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Chap_03/_04_EscapeSequence.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Chap_03/_Quiz_03.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Chap_04/_01_If.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Chap_04/_02_Else.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Chap_04/_03_ElseIf.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Sample/Chap_7/WordQuiz.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Sample/Chap_7/WordQuiz.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Sample/Chap_7/_07_.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Sample/Chap_7/_07_.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -39,6 +112,10 @@
   </component>
   <component name="PropertiesComponent">{
   &quot;keyToString&quot;: {
+    &quot;Downloaded.Files.Path.Enabled&quot;: &quot;false&quot;,
+    &quot;Repository.Attach.Annotations&quot;: &quot;false&quot;,
+    &quot;Repository.Attach.JavaDocs&quot;: &quot;false&quot;,
+    &quot;Repository.Attach.Sources&quot;: &quot;false&quot;,
     &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
@@ -53,12 +130,13 @@
     &quot;project.structure.last.edited&quot;: &quot;Project&quot;,
     &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
     &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;editor.preferences.tabs&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.fileTypes&quot;,
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
 }</component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Codeit\Java_programming\Java_Workspace\src\Sample\Chap_8" />
       <recent name="C:\Users\COX-PC\Desktop\임성민\Codeit\Java programming\Java Workspace\src\Sample\Chap_2" />
     </key>
     <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
@@ -134,12 +212,51 @@
       <workItem from="1698746578606" duration="7894000" />
       <workItem from="1698838058745" duration="3549000" />
       <workItem from="1698920105652" duration="4136000" />
-      <workItem from="1699010375966" duration="4490000" />
+      <workItem from="1699010375966" duration="4647000" />
+      <workItem from="1699062736722" duration="8824000" />
+      <workItem from="1699156085089" duration="4778000" />
+      <workItem from="1699179135617" duration="5192000" />
+      <workItem from="1699237082598" duration="9426000" />
+      <workItem from="1699321673809" duration="3127000" />
+      <workItem from="1699346375567" duration="7461000" />
+      <workItem from="1699442344452" duration="2934000" />
+      <workItem from="1699495091485" duration="5154000" />
+      <workItem from="1699582861307" duration="8292000" />
+      <workItem from="1699611182742" duration="7440000" />
+      <workItem from="1699755273103" duration="8745000" />
+      <workItem from="1699870184540" duration="7824000" />
+      <workItem from="1699957627431" duration="4678000" />
+      <workItem from="1700134333919" duration="4127000" />
+      <workItem from="1700218459237" duration="7045000" />
+      <workItem from="1700274500613" duration="7418000" />
+      <workItem from="1700385953343" duration="2921000" />
+      <workItem from="1700444590821" duration="12182000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <breakpoint enabled="true" type="java-exception">
+          <properties class="java.lang.StringIndexOutOfBoundsException" package="java.lang" />
+          <option name="timeStamp" value="1" />
+        </breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

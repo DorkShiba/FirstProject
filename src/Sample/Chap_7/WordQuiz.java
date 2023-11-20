@@ -3,22 +3,14 @@ import java.util.InputMismatchException;
 import java.util.Vector;
 import java.util.Scanner;
 import java.util.Iterator;
-import java.lang.StringBuffer;
 
 class Word {
     private String eng, kor;
-    private boolean used;
     public Word(String eng, String kor) {
         this.eng = eng;
         this.kor = kor;
-        used = false;
     }
 
-    public void setUsed(boolean used) {
-        this.used = used;
-    }
-
-    public boolean isUsed() { return used; }
     public String getEng() { return eng; }
     public String getKor() { return kor; }
 }
@@ -27,38 +19,39 @@ public class WordQuiz {
     private Vector<Word> wordList = new Vector<>();
     private Scanner scanner = new Scanner(System.in);
 
-    public void reset() {
-        Iterator<Word> it = wordList.iterator();
-        while (it.hasNext()) {
-            it.next().setUsed(false);
-        }
+    public void getWord() {
+        System.out.print("단어 리스트에 넣을 영단어를 입력해주세요>>");
+        String eng = scanner.next();
+        System.out.print("한국어 뜻을 입력해주세요>>");
+        String kor = scanner.next();
+        wordList.add(new Word(eng, kor));
     }
-
     public String getProblem(int correctIndex, int correctNum) {
-        StringBuffer pro = new StringBuffer();
+        String pro = "";
         Word correct = wordList.get(correctIndex);
+        Vector<Integer> used = new Vector<>();
 
         for (int i = 1; i <= 4; i++) {
-            pro.append("(").append(i).append(")");
+            pro = pro.concat("(").concat(Integer.toString(i)).concat(")");
 
             if (i == correctNum) {
-                pro.append(correct.getKor()).append(" ");
+                pro = pro.concat(correct.getKor()).concat(" ");
             } else {
                 int wrongIndex;
 
                 while (true) {
-                    wrongIndex = (int) (Math.random() * 17);
-                    if (wrongIndex == correctIndex || wordList.get(wrongIndex).isUsed()) { continue; }
+                    wrongIndex = (int) (Math.random() * wordList.size());
+                    if (wrongIndex == correctIndex || used.contains(wrongIndex)) { continue; }
 
-                    wordList.get(wrongIndex).setUsed(true);
+                    used.add(wrongIndex);
                     break;
                 }
-                pro.append(wordList.get(wrongIndex).getKor()).append(" ");
+                pro = pro.concat(wordList.get(wrongIndex).getKor()).concat(" ");
             }
         }
-        pro.append(":>");
+        pro = pro.concat(":>");
 
-        return pro.toString();
+        return pro;
     }
 
     public void run() {
@@ -66,7 +59,7 @@ public class WordQuiz {
         System.out.println("현재 " + wordList.size() + "개의 단어가 들어 있습니다.");
 
         while (true) {
-            int correctIndex = (int) (Math.random() * 17);
+            int correctIndex = (int) (Math.random() * wordList.size());
             Word correctAnswer = wordList.get(correctIndex);
             System.out.println(correctAnswer.getEng() + "?");
 
@@ -103,29 +96,33 @@ public class WordQuiz {
             } else {
                 System.out.println("No. !!");
             }
-            reset();
         }
     }
 
     public static void main(String[] args) {
         WordQuiz wq = new WordQuiz();
-        wq.wordList.add(new Word("love", "사랑"));
-        wq.wordList.add(new Word("animal", "동물"));
-        wq.wordList.add(new Word("plant", "식물"));
-        wq.wordList.add(new Word("human", "사람"));
-        wq.wordList.add(new Word("painting", "그림"));
-        wq.wordList.add(new Word("baby", "아기"));
-        wq.wordList.add(new Word("eye", "눈"));
-        wq.wordList.add(new Word("ear", "귀"));
-        wq.wordList.add(new Word("nose", "코"));
-        wq.wordList.add(new Word("mouth", "입"));
-        wq.wordList.add(new Word("hand", "손"));
-        wq.wordList.add(new Word("foot", "발"));
-        wq.wordList.add(new Word("house", "집"));
-        wq.wordList.add(new Word("dog", "개"));
-        wq.wordList.add(new Word("cat", "고양이"));
-        wq.wordList.add(new Word("tree", "나무"));
-        wq.wordList.add(new Word("school", "학교"));
+
+        int wordNum;
+        while (true) {
+            System.out.print("단어 리스트의 단어 갯수를 입력해주세요 (4보다 큰 정수)>>");
+            try {
+                wordNum = wq.scanner.nextInt();
+                if (wordNum <= 4) {
+                    System.out.println("4보다 큰 정수를 입력해주세요");
+                    wq.scanner.nextLine();
+                    continue;
+                }
+                break;
+            } catch (InputMismatchException e) {
+                System.out.println("4보다 큰 정수를 입력해주세요");
+                wq.scanner.nextLine();
+            }
+        }
+
+        for (int i = 1; i <= wordNum; i++) {
+            System.out.println(i + "번째 단어 입력");
+            wq.getWord();
+        }
         wq.run();
     }
 }
