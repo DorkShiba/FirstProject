@@ -1,143 +1,289 @@
 package CodeItJava;
 import java.util.Scanner;
 
+
+
 class Node<E> {
     private E data;
-    private Node next;
+    private Node<E> next;
     public Node(E data) {
         this.data = data;
         next = null;
     }
 
-    // setter
-    public void setData(E data) { this.data = data; }
-    public void setNext(Node e) { next = e; }
+    public void data(E data) { this.data = data; }
+    public E data() { return data; }
 
-    // getter
-    public E getData() { return data; }
-    public Node getNext() { return next; }
+    public void next(Node<E> e) { this.next = e; }
+    public Node<E> next() { return next; }
 
     public boolean hasNext() { return next != null; }
+
+    public String toString() { return data.toString(); }
 }
 
-class LinkedList {
-    private Node head;
-    private Node tail;
-    private int size;
+class DNode<E> extends Node<E> {
+    private DNode<E> prev;
+    public DNode(E data) {
+        super(data);
+        prev = null;
+    }
+
+    public DNode<E> next() { return (DNode<E>) super.next(); }
+
+    public void prev(DNode<E> e) { this.prev = e; }
+    public DNode<E> prev() { return prev; }
+
+    public boolean hasPrev() { return prev != null; }
+}
+
+class LinkedList<E> {
+    private Node<E> head;
+    private Node<E> tail;
+    protected int size;
 
     // constructor
     public LinkedList() {
-        this(null);
+        head = null;
+        tail = null;
         size = 0;
     }
-    public LinkedList(Node node) {
+    public LinkedList(E data) { this(new Node<>(data)); }
+    public LinkedList(Node<E> node) {
         head = node;
         tail = node;
         size = 1;
     }
 
-    // setter
-    public void setHead(Node head) { this.head = head; }
-    public void setTail(Node tail) { this.tail = tail; }
+    public void head(Node<E> node) {
+        if (size == 0) {
+            head = node;
+            tail = node;
+            size = 1;
+        } else { head = node; }
+    }
+    public void head(E data) {
+        Node<E> node = new Node<>(data);
+        head(node);
+    }
+    public Node<E> head() { return head; }
 
-    // getter
-    public Node getHead() { return head; }
-    public Node getTail() { return tail; }
+    public void tail(Node<E> node) {
+        if (size == 0) { head(node); }
+        else { tail = node; }
+    }
+    public void tail(E data) { tail(new Node<>(data)); }
+    public Node<E> tail() { return tail; }
+
     public int size() { return size; }
 
-    public <E> void append(E data) {
-        Node<E> node = new Node<>(data);
+    public Node<E> get(int index) {
+        if (index > size-1 || index < 0) { return null; }
 
-        if (head == null) {
-            head = node;
-            tail = node;
-        } else {
-            tail.setNext(node);
-            tail = node;
+        int count = 0;
+        Node<E> temp = head;
+        while (count != index) {
+            temp = temp.next();
+            count++;
         }
+
+        return temp;
+    }
+
+    // 삽입 연산
+    public void insert(E data, int index) {
+        if (index > size || index < 0) { return; }
+
+        Node<E> node = new Node<>(data);
+        if (index == 0) { prepend(data); }
+        else if (index == size) { append(data); }
+        else {
+            Node<E> temp = get(index - 1);
+            node.next(temp.next());
+            temp.next(node);
+            size++;
+        }
+    }
+
+    // 가장 앞 삽입 연산
+    public void prepend(E data) {
+        Node<E> node = new Node<>(data);
+        node.next(head);
+        head = node;
         size++;
     }
 
-    public <E> void insert(E data, int index) {
+    // 추가(맨 뒤 삽입) 연산
+    public void append(E data) {
         Node<E> node = new Node<>(data);
-        if (size == 0) {
-            if (index != 0) { return; }
-            head = node;
-            tail = node;
-        } else {
-            if (index > size) { return; }
-            else if (index == 0) {
-                node.setNext(head);
-                head = node;
-                size++;
-                return;
-            }
-
-            int count = 0;
-            Node temp = head;
-            while (count != index - 1) {
-                temp = temp.getNext();
-                count++;
-            }
-            node.setNext(temp.getNext());
-            temp.setNext(node);
-        }
+        if (size == 0) { head = node; }
+        else { tail.next(node); }
+        tail = node;
         size++;
     }
 
-    public Node pop() {
+    // 맨 뒤(tail 노드) 삭제 연산
+    public Node<E> pop() {
         if (size == 0) { return null; }
 
-        Node node = tail;
-        Node it = head;
-        while (!it.getNext().equals(tail)) {
-            it = it.getNext();
+        Node<E> node = tail;
+        if (size == 1) {
+            head = null;
+            tail = null;
+        } else {
+            Node<E> temp = get(size - 2);
+            temp.next(null);
+            tail = temp;
         }
-        it.setNext(null);
-        tail = it;
         size--;
+
         return node;
     }
 
-    public void delete(int index) {
-        if (size == 0) { return; }
+    // 맨 앞(head 노드) 삭제 연산
+    public Node<E> popLeft() {
+        if (size < 2) { return pop(); }
 
-        if (index == 0) {
-            head = head.getNext();
-            size--;
-            return;
-        }
-
-        int count = 0;
-        Node it = head;
-        while (count != index - 1) {
-            it = it.getNext();
-            count++;
-        }
-        it.setNext(it.getNext().getNext());
+        Node<E> node = head;
+        head = head.next();
         size--;
+
+        return node;
     }
 
-    public boolean empty() { return head == null; }
+    // 삭제 연산
+    public Node<E> delete(int index) {
+        if (index < 0 || index >= size) { return null; }
+
+        if (index == 0) { return popLeft(); }
+        else if (index == size - 1) { return pop(); }
+
+        Node<E> temp = get(index - 1);
+        Node<E> node = temp.next();
+        temp.next(temp.next().next());
+        size--;
+
+        return node;
+    }
+
+    public boolean empty() { return size == 0; }
+    public String toString() {
+        String res = "|";
+        int count = 0;
+        Node<E> it = head;
+        while (count != size) {
+            res = res.concat(it.toString() + "|");
+            it = it.next();
+            count++;
+        }
+
+        return res;
+    }
 }
+
+class DoublyLinkedList<E> extends LinkedList<E> {
+    public DoublyLinkedList() { super(); }
+    public DoublyLinkedList(E data) {
+        super(new DNode<>(data));
+    }
+
+    public void head(E data) { this.head(new DNode<>(data)); }
+    public DNode<E> head() {
+        if (super.head() == null) { return null; }
+        else { return (DNode<E>) super.head(); }
+    }
+
+    public void tail(E data) { this.tail(new DNode<>(data)); }
+    public DNode<E> tail() {
+        if (super.tail() == null) { return null; }
+        else { return (DNode<E>) super.tail(); }
+    }
+
+    public DNode<E> get(int index) { return (DNode<E>) super.get(index); }
+
+    public void prepend(E data) {
+        DNode<E> node = new DNode<>(data);
+        if (size() == 0) {
+            this.head(node);
+        } else {
+            node.next(this.head());
+            this.head().prev(node);
+            this.head(node);
+            size++;
+        }
+    }
+
+    public void append(E data) {
+        DNode<E> node = new DNode<>(data);
+        if (size == 0) {
+            this.head(node);
+        } else {
+            this.tail().next(node);
+            node.prev(this.tail());
+            tail(node);
+            size++;
+        }
+    }
+
+    public void insert(E data, int index) {
+        DNode<E> node = new DNode<>(data);
+        if (index < 0 || index > size()) { return; }
+
+        if (index == 0) { prepend(data); }
+        else if (index == size()) { append(data); }
+        else {
+            DNode<E> temp = get(index - 1);
+            node.next(temp.next());
+            node.next().prev(node);
+            node.prev(temp);
+            temp.next(node);
+            size++;
+        }
+    }
+
+    public DNode<E> pop() {
+        if (size == 0) { return null; }
+        else { return (DNode<E>) super.pop(); }
+    }
+
+    public DNode<E> popLeft() {
+        if (size == 0) { return null; }
+        else if (size == 1) { return (DNode<E>) super.popLeft(); }
+
+        DNode<E> node = head();
+        head().next().prev(null);
+        head(head().next());
+        size--;
+
+        return node;
+    }
+
+    public DNode<E> delete(int index) {
+        if (index < 0 || index >= size) { return null; }
+
+        if (index == 0) { return this.popLeft(); }
+        else if (index == size - 1) { return this.pop(); }
+
+        DNode<E> node = get(index);
+        node.prev().next(node.next());
+        node.next().prev(node.prev());
+
+        return node;
+    }
+}
+
 public class LinkedListEx {
     public static void main(String[] args) {
-        Node<String> a = new Node<>("Hello");
-        Scanner scanner = new Scanner(System.in);
-        LinkedList ll = new LinkedList(a);
-        String str = "";
-        while (!str.equals("quit") && !str.equals("그만")) {
-            System.out.print(">> ");
-            str = scanner.nextLine();
-            String[] spl = str.split(" ");
-
-            switch (spl[0]) {
-                case "int" -> ll.append(Integer.parseInt(spl[1]));
-                case "double" -> ll.append(Double.parseDouble(spl[1]));
-                case "boolean" -> ll.append(Boolean.parseBoolean(spl[1]));
-                case "char" -> ll.append(spl[1].charAt(0));
-                default -> ll.append(spl[1]);
-            }
+        DoublyLinkedList<Integer> dll = new DoublyLinkedList<>(0);
+        for (int i = 1; i < 21; i++) {
+            dll.prepend(i);
         }
+        System.out.println(dll);
+
+        dll.popLeft();
+        System.out.println(dll);
+
+        dll.pop();
+        System.out.println(dll);
     }
 }

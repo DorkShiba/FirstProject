@@ -1,0 +1,219 @@
+9장 자바 GUI 기초, AWT와 스윙(Swing)
+
+--------------------------------------------------------------
+9-1 자바의 GUI
+1. GUI 응용프로그램이란?
+ - GUI(Graphical User Interface)
+  - 이미지, 그래픽을 이용해 메뉴 등을 포함한 화면 구성
+  - 편리한 입력 도구를 통해 사용자가 입력하기 편하게 만들어진 사용자 인터페이스
+ - 자바는 AWT와 Swing 패키지 등의 강력한 GUI 라이브러리를 제공
+  -> 개발자들이 GUI를 쉽게 구성하게 함
+ - 일반적으로 GUI 응용프로그램과 그렇지 않은 콘솔 기반 응용 프로그램은 작성 방식이 다름 (자바도 마찬가지)
+
+2. AWT와 Swing 패키지
+ - 자바의 GUI 컴포넌트는 AWT 컴포넌트와 Swing 컴포넌트로 구분
+  - 각각 java.awt, javax.swing 패키지에 공급
+ 1) AWT(Abstract Windowing Toolkit)
+  - 자바가 처음 나올 때 함께 배포된 패키지
+  - Frame, Window, Panel, Dialog, Button, Label, TextField, Checkbox, Choice 등의 컴포넌트 제공
+   - 이러한 AWT 컴포넌트들은 중량 컴포넌트(heavy weight component)로 불림
+   - 이들은 운영체제의 도움으로 화면에 출력됨
+    -> 운영체제 자원 많이 소모 -> 운영체제 많은 부담
+    -> 실행되는 운영체제에 따라 다른 모양으로 그려짐
+ 2) 스윙(Swing)
+  - AWT와 달리 순수 자바 언어로 작성됨
+  - 운영체제의 도움을 받지 않음
+   -> 경량 컴포넌트(light weight component)라 불림
+   -> 운영체제 관계없이 항상 동일하게 작동, 동일하게 그려짐
+  - 모든 AWT 컴포넌트들이 100% 호환되게 스윙 컴포넌트로 다시 작성됨
+  - 컴포넌트 이름은 AWT와 구분하기 위해 모두 J로 시작함
+  - 선마이크로시스템 사에서 AWT에 없는 풍부한 고급 컴포넌트 개발
+   -> AWT보다 스윙 컴포넌트를 쓰면 보다 화려하고 다양한 모양의 GUI 응용 프로그램 개발 용이
+  - 스윙은 AWT에 구현된 이벤트 처리나 GUI 컴포넌트 기본 원리를 바탕으로 작성됨
+   -> AWT 패키지 필요
+ 3) AWT보다 스윙 사용 권장
+  - 개발자는 둘 중 택일하여 GUI 응용프로그램 개발 가능
+  - 둘 동시 사용은 금지 (작동 내부 구조가 서로 다르게 구현되어있기 때문)
+
+3. 스윙 기반 GUI 응용프로그램
+ - 컴포넌트들 종류와 역할 간단히
+  - JFrame: 응용프로그램 전체 컴포넌트 담음
+  - JMenuBar: 모든 메뉴 담음
+  - JMenu: 메뉴로 작동
+  - JToolBar: 툴바로 작동
+  - JButton: 버튼 작동, 이미지 버튼으로도 작동
+  - JLabel: 문자열 및 이미지 출력
+  - JTextField: 한 줄 문자열 입력 받음
+  - JComboBox: 푸시다운 버튼으로 작동
+  - JSplitPane: 두 개의 분리된 팬으로 작동
+  - JList: 리스트 출력
+  - JScrollPane: JLabel에 출력된 이미지나 텍스트를 스크롤 가능하게 함
+
+--------------------------------------------------------------
+9-2 자바 GUI 패키지
+1. GUI 패키지 계층 구조
+ - 모든 컴포넌트들은 Component 클래스를 상속받음
+ - 상속 계층도
+Object
+ - Font
+ - FontMetrics
+ - Component
+  - Button
+  - Label
+  - TextComponent
+  - List
+  - Canvas
+  - Scrollbar
+  - Checkbox
+  - Choice
+  - Container
+   - JComponent
+    - JLabel
+    - JList
+    - JComboBox
+    - JSlider
+    - JScrollBar
+    - JPanel
+    - JLayeredPane
+    - JOptionPane
+    - JTabbedPane
+    - JSplitPane
+    - JSaparator
+    - JRootPane
+    - JToolBar
+    - JMenuBar
+    - JToolTip
+    - JPopupMenu
+    - JFileChooser
+    - JColorChooser
+    - JTree
+    - JTable
+    - JTableHeader
+    - JProgressBar
+    - JSpinner
+    - JScrollPane
+    - JInternalFrame
+    - JTextComponent
+     - JEditorPane
+     - JTextField
+      - JPasswordField
+     - JTextArea
+    - AbstractButton
+     - JMenuItem
+      - JMenu
+      - JCheckBoxMenuItem
+      - JRadioButtonMenuItem
+     - JButton
+     - JToggleButton
+      - JCheckBox
+      - JRadioButton
+   - Panel
+    - Applet
+     - JApplet
+   - Window
+    - Frame
+     - JFrame
+    - Dialog
+     - JDialog
+ - Dimension
+ - Color
+ - Graphics
+ * Font, FontMetrics, Dimension, Color, Graphics는 컴포넌트는 아니지만 그래픽 작업 시 반드시 필요
+
+2. 컨테이너와 컴포넌트
+ - 자바의 GUI 응용프로그램은 GUI 컴포넌트들로 구성됨
+ - 이들은 다른 컴포넌트를 포함할 수 있는지 여부에 따라 순수 컴포넌트와 컨테이너로 분류
+ 1) 컨테이너: 다른 GUI 컴포넌트를 포함할 수 있는 컴포넌트
+  - 따라서 컨테이너는 컴포넌트이면서 컨테이너
+  - java.awt.Container 클래스를 상속받아야 함
+  - 컨테이너는 다른 컨테이너의 컴포넌트로 포함될 수 있다
+  - 종류: Frame, Panel, Applet, Dialog, Window / JFrame, JPanel, JApplet, JDialog, JWindow
+ 2) 컴포넌트
+  - 다른 컴포넌트 포함 불가
+  - 컨테이너에 포함되어야 비로소 화면에 출력될 수 있음
+  - 모두 java.awt.Component 클래스를 상속받음
+  - 순수 스윙 컴포넌트들은 javax.swing.JComponent를 상속받음
+ 3) 최상위 컨테이너(Top Level Container)
+  - 컨테이너 중에서 다른 컨테이너에 속하지 않고도 독립적으로 화면에 출력될 수 있는 컨테이너
+  - JFrame, JDialog, JApplet이 해당
+  - 나머지 컨테이너/컴포넌트는 다른 컨체이너에 포함되어야 함
+ 4) 컨테이너와 컴포넌트 포함관계
+  - 컨테이너에 부착된 컴포넌트들을 자식 컴포넌트라고 한다
+
+--------------------------------------------------------------
+9-3 스윙 GUI 프로그램 만들기
+ - 스윙으로 만들기 위한 세 과정
+  - 스윙 프레임 작성
+  - main() 메소드 작성
+  - 프레임에 스윙 컴포넌트 붙이기
+1. 스윙 패키지 사용을 위한 import 문
+ - 스윙 컴포넌트 클래스 파일들이 존재하는 javax.swing.*을 import 해야 한다
+ - 대부분의 스윙 응용프로그램은 이벤트 처리, 이미지나 도형 그리기가 필수
+  -> 다음 import 문들이 필요한 경우가 많다
+import java.awt.*;  // 폰트 등 그래픽 처리를 위한 클래스들
+import java.awt.event.*;  // 이벤트 처리에 필요한 기본 클래스들
+import javax.swing.*;  // 스윙 컴포넌트 클래스들
+import javax.swing.event.*;  // 스윙 이벤트 처리에 필요한 클래스들
+
+2. 스윙 프레임과 컨텐트팬
+ - 스윙 프레임: 모든 스윙 컴포넌트들을 담는 최상위 컨테이너
+ - 스윙 프레임 출력 시 > 부착된 모든 컴포넌트들이 출력됨
+ - 컴포넌트들은 스윙 프레임 없이 독립적으로 출력 불가
+  -> 스윙 프레임 닫힘 > 프레임 내 모든 컴포넌트들 출력 중지
+ - 스윙에서 프레임 역할하는 클래스는 JFrame
+  - JFrame은 Frame(java.awt.Frame), 메뉴바(MenuBar), 컨텐트팬(Content Pane) 3 공간으로 구성됨
+  - 메뉴바는 메뉴들을 부착하는 공간
+  - 컨텐트팬은 메뉴를 제외한 모든 GUI 컴포넌트들을 부착하는 공간
+
+3. 프레임 만들기 JFrame 클래스 상속
+ - 스윙 응용프로그램 프레임은 JFrame을 상속받아 만든다
+public class MyFrame extends JFrame {
+    ...
+}
+ - 객체가 생성되면 스윙 프레임의 역할을 하게 된다
+ - 프레임 크기와 타이틀 설정, 생성자에서 설정한다
+setTitle("300x300 스윙 프레임 만들기");  // 타이틀 설정
+setSize(300, 300);  // 폭 300, 높이 300 크기
+setVisible(true);  // 프레임 출력 지시, false이면 프레임이 숨겨짐
+
+4. 스윙 응용프로그램에서 main() 메소드 기능과 위치
+ - 스윙 응용프로그램에서 메인 메소드의 기능은 최소화하는 걸 권장
+  - 응용프로그램 실행 시작점으로서 프레임 생성 코드만 작성
+  - 나머지 기능은 프레임 클래스에 작성
+
+5. 프레임에 컴포넌트 붙이기
+ 1) 타이틀 달기
+  - super()을 이용해 JFrame 생성자를 호출하거나
+  - setTitle() 메소드 이용
+ 2) 메뉴 붙이기
+  - 메뉴바 만들고, 메뉴를 붙이고, 메뉴에 여러 메뉴 아이템을 붙인다
+  - 이런 메뉴바를 JFrame 메뉴바 영역에 붙이면 화면에 메뉴가 출력 된다
+ 3) 컨텐트팬에 컴포넌트 달기
+  - 스윙에서는 컨텐트팬에만 컴포넌트 부착 가능
+  - JFrame 객체 생성 시 컨텐트팬 자동 생성
+  - getContentPane() 메소드로 Container 타입인 컨텐트팬을 알아낼 수 있다
+   - Container contentPane = getContentPane();
+  - add() 메소드를 이용해 컴포넌트를 부착한다
+   - JButton button = new JButton("Click");  // 버튼 컴포넌트 생성
+     contentPane.add(button);  // 컨텐트팬에 버튼 부착
+ 4) 컨텐트팬 변경
+  - setContentPane() 메소드로 기존 컨텐트팬 제거 후 새로 부착 가능
+  - 컨텐트팬은 Container 타입 -> Container를 상속받은 어떤 컨테이너라도 컨텐트팬이 될 수 있다
+
+6. 스윙 응용프로그램의 종료
+ - 자바의 프로그램 종료 코드: System.exit(0);
+ - 프레임 윈도우 오른쪽 상단 x 버튼은 프레임 윈도우 닫기 버튼 / 프로그램 종료 버튼이 아니다!!
+  -> 사용자가 프레임 윈도우를 닫으면 프레임은 화면에서 사라지지만, 프로그램은 종료되지 않는다
+  - 프레임 윈도우 닫기와 스윙 프로그램 종료를 함께하려면
+  - frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+
+7. main() 메소드가 종료돼도 프레임이 살아 있는 이유
+ - 자바 응용프로그램 시작 -> JVM은 main 스레드 만들어서 메소드 실행
+  - 응용프로그램이 스레드를 만들지 않는 경우, main() 메소드 종료 시 main 스레드 종료
+   -> 더 이상 남은 스레드 없음 -> 응용프로그램 종료
+  - JFrame 객체 생성 시 -> 입력되는 키, 마우스 움직임 등 처리하는 이벤트 처리(분배) 스레드(Event Dispatch Thread) 추가 생성
+   -> main 스레드 종료 후에도 남음 -> 자바 응용프로그램 종료 x
+
+--------------------------------------------------------------
+9-4 컨테이너와 배치
+1. 컨테이너와 배치 개념

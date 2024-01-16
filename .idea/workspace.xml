@@ -5,81 +5,318 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="4fb0ee20-14b7-4694-9034-33b2818b3ef2" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/CodeItJava/DynamicArrayEx.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/CodeItJava/LinkedListEx.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Sample/Chap_7/Chap 7 이론문제.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Sample/Chap_7/PracticalProblem/Average.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Sample/Chap_7/PracticalProblem/CapitalQuiz.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Sample/Chap_7/PracticalProblem/GraphicEditor.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Sample/Chap_7/PracticalProblem/LocationManage.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Sample/Chap_7/PracticalProblem/MaxInt.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Sample/Chap_7/PracticalProblem/MyProgram.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Sample/Chap_7/PracticalProblem/PointManage.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Sample/Chap_7/PracticalProblem/PopulationSearch.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Sample/Chap_7/PracticalProblem/Precipitation.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Sample/Chap_7/PracticalProblem/ScholarshipManage.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Sample/Chap_7/PracticalProblem/StackManager.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Sample/Chap_7/PracticalProblem/StudentManage.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Sample/Chap_8/Chap 8 이론문제.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Sample/Chap_8/Chap 8 필기.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Sample/Chap_8/Check Time.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Sample/Chap_8/HangMan.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Sample/Chap_8/_08_.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Sample/Chap_8/test.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Sample/Chap_8/words.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Sample/Chap_8/write.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/CodeItJava/HashTableEx.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/CodeItJava/TreeEx.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/DataStructureAndAlgorithms/CreditCard.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/DataStructureAndAlgorithms/Ex.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/JavaStudy/Chap_6/PracticalProblem/app/GraphicEditor.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/JavaStudy/Chap_7/_07_.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/JavaStudy/Chap_8/PracticalProblem/CompareFile.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/JavaStudy/Chap_8/PracticalProblem/FileAppend.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/JavaStudy/Chap_8/PracticalProblem/FileExplorer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/JavaStudy/Chap_8/PracticalProblem/MaxSizeFile.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/JavaStudy/Chap_8/PracticalProblem/PhoneNumber.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/JavaStudy/Chap_8/PracticalProblem/PhoneNumberPrint.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/JavaStudy/Chap_8/PracticalProblem/SearchPhone.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/JavaStudy/Chap_8/PracticalProblem/TenPercentCopy.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/JavaStudy/Chap_8/PracticalProblem/ToUpper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/JavaStudy/Chap_8/PracticalProblem/WithLineNumber.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/JavaStudy/Chap_8/PracticalProblem/WordPrint.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/JavaStudy/Chap_8/PracticalProblem/WordSearch.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/JavaStudy/Chap_8/PracticalProblem/txtDelete.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/JavaStudy/Chap_8/_08_.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/JavaStudy/Chap_8/write.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/JavaStudy/Chap_9/Chap 9 필기.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/JavaStudy/Chap_9/Check Time.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/JavaStudy/Chap_9/MyFrame.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Java_Workspace/Chap_01/_01_HelloWorld.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Java_Workspace/Chap_01/_02_DataTypes.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Java_Workspace/Chap_01/_03_Variables.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Java_Workspace/Chap_01/_04_Comment.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Java_Workspace/Chap_01/_05_VariablesName.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Java_Workspace/Chap_01/_06_Constants.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Java_Workspace/Chap_01/_07_TypeCasting.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Java_Workspace/Chap_01/_Quiz_01.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Java_Workspace/Chap_02/_01_Operator1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Java_Workspace/Chap_02/_02_Operator2.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Java_Workspace/Chap_02/_03_Operator3.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Java_Workspace/Chap_02/_04_Operator4.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Java_Workspace/Chap_02/_05_Operator5.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Java_Workspace/Chap_02/_Quiz_02.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Java_Workspace/Chap_03/_01_String1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Java_Workspace/Chap_03/_02_String2.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Java_Workspace/Chap_03/_03_StringCompare.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Java_Workspace/Chap_03/_04_EscapeSequence.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Java_Workspace/Chap_03/_Quiz_03.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Java_Workspace/Chap_04/_01_If.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Java_Workspace/Chap_04/_02_Else.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Java_Workspace/Chap_04/_03_ElseIf.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Java_Workspace/Sample/Chap_7/A.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Java_Workspace/Sample/Chap_7/Word.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Java_Workspace/Sample/Chap_7/Word.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Java_Workspace/Sample/Chap_7/WordQuiz.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Java_Workspace/Sample/Chap_7/WordQuiz.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Java_Workspace/Sample/Chap_7/_07_.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Java_Workspace/Sample/Chap_7/_07_.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Chap_01/_01_HelloWorld.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Chap_01/_02_DataTypes.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Chap_01/_03_Variables.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Chap_01/_04_Comment.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Chap_01/_05_VariablesName.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Chap_01/_06_Constants.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Chap_01/_07_TypeCasting.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Chap_01/_Quiz_01.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Chap_02/_01_Operator1.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Chap_02/_02_Operator2.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Chap_02/_03_Operator3.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Chap_02/_04_Operator4.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Chap_02/_05_Operator5.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Chap_02/_Quiz_02.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Chap_03/_01_String1.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Chap_03/_02_String2.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Chap_03/_03_StringCompare.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Chap_03/_04_EscapeSequence.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Chap_03/_Quiz_03.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Chap_04/_01_If.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Chap_04/_02_Else.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Chap_04/_03_ElseIf.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Sample/Chap_7/WordQuiz.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Sample/Chap_7/WordQuiz.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Sample/Chap_7/_07_.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Sample/Chap_7/_07_.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Java_Workspace/CodeItJava/LinkedList.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Java_Workspace/CodeItJava/LinkedList.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Java_Workspace/CodeItJava/LinkedListEx.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Java_Workspace/CodeItJava/LinkedListEx.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Java_Workspace/CodeItJava/Node.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Java_Workspace/CodeItJava/Node.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Java_Workspace/Sample/Chap_2/Chap 2 이론문제.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Java_Workspace/Sample/Chap_2/Chap 2 필기.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Java_Workspace/Sample/Chap_2/Check Time.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Java_Workspace/Sample/Chap_2/PracticalProblem/Pro_1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Java_Workspace/Sample/Chap_2/PracticalProblem/Pro_10.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Java_Workspace/Sample/Chap_2/PracticalProblem/Pro_11.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Java_Workspace/Sample/Chap_2/PracticalProblem/Pro_12.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Java_Workspace/Sample/Chap_2/PracticalProblem/Pro_2.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Java_Workspace/Sample/Chap_2/PracticalProblem/Pro_3.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Java_Workspace/Sample/Chap_2/PracticalProblem/Pro_4.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Java_Workspace/Sample/Chap_2/PracticalProblem/Pro_5.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Java_Workspace/Sample/Chap_2/PracticalProblem/Pro_6.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Java_Workspace/Sample/Chap_2/PracticalProblem/Pro_7.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Java_Workspace/Sample/Chap_2/PracticalProblem/Pro_8.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Java_Workspace/Sample/Chap_2/PracticalProblem/Pro_9.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Java_Workspace/Sample/Chap_2/_02_.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Java_Workspace/Sample/Chap_2/_02_OpenChallenge.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Java_Workspace/Sample/Chap_3/Chap 3 이론문제.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Java_Workspace/Sample/Chap_3/Chap 3 필기.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Java_Workspace/Sample/Chap_3/Check Time.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Java_Workspace/Sample/Chap_3/PracticalProblem/Pro_1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Java_Workspace/Sample/Chap_3/PracticalProblem/Pro_10.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Java_Workspace/Sample/Chap_3/PracticalProblem/Pro_11.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Java_Workspace/Sample/Chap_3/PracticalProblem/Pro_12.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Java_Workspace/Sample/Chap_3/PracticalProblem/Pro_13.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Java_Workspace/Sample/Chap_3/PracticalProblem/Pro_14.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Java_Workspace/Sample/Chap_3/PracticalProblem/Pro_15.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Java_Workspace/Sample/Chap_3/PracticalProblem/Pro_16.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Java_Workspace/Sample/Chap_3/PracticalProblem/Pro_2.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Java_Workspace/Sample/Chap_3/PracticalProblem/Pro_3.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Java_Workspace/Sample/Chap_3/PracticalProblem/Pro_4.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Java_Workspace/Sample/Chap_3/PracticalProblem/Pro_5.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Java_Workspace/Sample/Chap_3/PracticalProblem/Pro_6.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Java_Workspace/Sample/Chap_3/PracticalProblem/Pro_7.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Java_Workspace/Sample/Chap_3/PracticalProblem/Pro_8.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Java_Workspace/Sample/Chap_3/PracticalProblem/Pro_9.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Java_Workspace/Sample/Chap_3/_03_.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Java_Workspace/Sample/Chap_3/_03_OpenChallenge.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Java_Workspace/Sample/Chap_4/Chap 4 이론문제.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Java_Workspace/Sample/Chap_4/Chap 4 필기.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Java_Workspace/Sample/Chap_4/Check Time.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Java_Workspace/Sample/Chap_4/Player.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Java_Workspace/Sample/Chap_4/PracticalProblem/Add.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Java_Workspace/Sample/Chap_4/PracticalProblem/ArrayUtil.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Java_Workspace/Sample/Chap_4/PracticalProblem/Calc.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Java_Workspace/Sample/Chap_4/PracticalProblem/Circle.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Java_Workspace/Sample/Chap_4/PracticalProblem/CircleManager.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Java_Workspace/Sample/Chap_4/PracticalProblem/Day.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Java_Workspace/Sample/Chap_4/PracticalProblem/Dictionary.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Java_Workspace/Sample/Chap_4/PracticalProblem/Div.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Java_Workspace/Sample/Chap_4/PracticalProblem/Grade.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Java_Workspace/Sample/Chap_4/PracticalProblem/MonthSchedule.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Java_Workspace/Sample/Chap_4/PracticalProblem/Mul.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Java_Workspace/Sample/Chap_4/PracticalProblem/Phone.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Java_Workspace/Sample/Chap_4/PracticalProblem/PhoneBook.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Java_Workspace/Sample/Chap_4/PracticalProblem/Rectangle.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Java_Workspace/Sample/Chap_4/PracticalProblem/Reservation.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Java_Workspace/Sample/Chap_4/PracticalProblem/Seat.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Java_Workspace/Sample/Chap_4/PracticalProblem/Song.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Java_Workspace/Sample/Chap_4/PracticalProblem/StaticEx.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Java_Workspace/Sample/Chap_4/PracticalProblem/Sub.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Java_Workspace/Sample/Chap_4/PracticalProblem/TV.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Java_Workspace/Sample/Chap_4/WordGameApp.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Java_Workspace/Sample/Chap_4/_04_.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Java_Workspace/Sample/Chap_5/A.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Java_Workspace/Sample/Chap_5/Bear.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Java_Workspace/Sample/Chap_5/Chap 5 이론문제.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Java_Workspace/Sample/Chap_5/Chap 5 필기.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Java_Workspace/Sample/Chap_5/Check Time.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Java_Workspace/Sample/Chap_5/Fish.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Java_Workspace/Sample/Chap_5/Game.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Java_Workspace/Sample/Chap_5/GameObject.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Java_Workspace/Sample/Chap_5/PracticalProblem/Add.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Java_Workspace/Sample/Chap_5/PracticalProblem/Calc.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Java_Workspace/Sample/Chap_5/PracticalProblem/Calculator.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Java_Workspace/Sample/Chap_5/PracticalProblem/Circle.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Java_Workspace/Sample/Chap_5/PracticalProblem/Circle2.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Java_Workspace/Sample/Chap_5/PracticalProblem/ColorPoint.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Java_Workspace/Sample/Chap_5/PracticalProblem/ColorTV.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Java_Workspace/Sample/Chap_5/PracticalProblem/Converter.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Java_Workspace/Sample/Chap_5/PracticalProblem/Dictionary.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Java_Workspace/Sample/Chap_5/PracticalProblem/DictionaryApp.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Java_Workspace/Sample/Chap_5/PracticalProblem/Div.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Java_Workspace/Sample/Chap_5/PracticalProblem/GraphicEditor.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Java_Workspace/Sample/Chap_5/PracticalProblem/IPTV.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Java_Workspace/Sample/Chap_5/PracticalProblem/Km2Mile.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Java_Workspace/Sample/Chap_5/PracticalProblem/Line.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Java_Workspace/Sample/Chap_5/PracticalProblem/Mul.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Java_Workspace/Sample/Chap_5/PracticalProblem/Oval.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Java_Workspace/Sample/Chap_5/PracticalProblem/PairMap.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Java_Workspace/Sample/Chap_5/PracticalProblem/Point.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Java_Workspace/Sample/Chap_5/PracticalProblem/Point3D.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Java_Workspace/Sample/Chap_5/PracticalProblem/PositivePoint.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Java_Workspace/Sample/Chap_5/PracticalProblem/Rect.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Java_Workspace/Sample/Chap_5/PracticalProblem/Rect2.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Java_Workspace/Sample/Chap_5/PracticalProblem/Shape.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Java_Workspace/Sample/Chap_5/PracticalProblem/Shape2.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Java_Workspace/Sample/Chap_5/PracticalProblem/ShapeApp.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Java_Workspace/Sample/Chap_5/PracticalProblem/Stack.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Java_Workspace/Sample/Chap_5/PracticalProblem/StackApp.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Java_Workspace/Sample/Chap_5/PracticalProblem/StringStack.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Java_Workspace/Sample/Chap_5/PracticalProblem/Sub.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Java_Workspace/Sample/Chap_5/PracticalProblem/TV.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Java_Workspace/Sample/Chap_5/PracticalProblem/Won2Dollar.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Java_Workspace/Sample/Chap_5/_05_.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Java_Workspace/Sample/Chap_6/Chap 6 이론문제.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Java_Workspace/Sample/Chap_6/Chap 6 필기.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Java_Workspace/Sample/Chap_6/Check Time.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Java_Workspace/Sample/Chap_6/Histogram.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Java_Workspace/Sample/Chap_6/PracticalProblem/Circle.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Java_Workspace/Sample/Chap_6/PracticalProblem/Gambling.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Java_Workspace/Sample/Chap_6/PracticalProblem/MyPoint.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Java_Workspace/Sample/Chap_6/PracticalProblem/Person.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Java_Workspace/Sample/Chap_6/PracticalProblem/Pro_5.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Java_Workspace/Sample/Chap_6/PracticalProblem/Pro_6.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Java_Workspace/Sample/Chap_6/PracticalProblem/Pro_7.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Java_Workspace/Sample/Chap_6/PracticalProblem/Pro_8.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Java_Workspace/Sample/Chap_6/PracticalProblem/Pro_9.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Java_Workspace/Sample/Chap_6/PracticalProblem/StringEditor.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Java_Workspace/Sample/Chap_6/PracticalProblem/app/GraphicEditor.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Java_Workspace/Sample/Chap_6/PracticalProblem/base/Shape.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Java_Workspace/Sample/Chap_6/PracticalProblem/derived/Circle.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Java_Workspace/Sample/Chap_6/PracticalProblem/etc/Calc.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Java_Workspace/Sample/Chap_6/PracticalProblem/main/MainApp.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Java_Workspace/Sample/Chap_6/_06_.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Java_Workspace/Sample/Chap_7/Chap 7 이론문제.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Java_Workspace/Sample/Chap_7/Chap 7 필기.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Java_Workspace/Sample/Chap_7/Check Time.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Java_Workspace/Sample/Chap_7/PracticalProblem/Average.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Java_Workspace/Sample/Chap_7/PracticalProblem/Candidate.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Java_Workspace/Sample/Chap_7/PracticalProblem/CapitalQuiz.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Java_Workspace/Sample/Chap_7/PracticalProblem/Circle.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Java_Workspace/Sample/Chap_7/PracticalProblem/GraphicEditor.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Java_Workspace/Sample/Chap_7/PracticalProblem/IStack.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Java_Workspace/Sample/Chap_7/PracticalProblem/Line.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Java_Workspace/Sample/Chap_7/PracticalProblem/Location.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Java_Workspace/Sample/Chap_7/PracticalProblem/LocationManage.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Java_Workspace/Sample/Chap_7/PracticalProblem/MaxInt.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Java_Workspace/Sample/Chap_7/PracticalProblem/MyProgram.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Java_Workspace/Sample/Chap_7/PracticalProblem/MyStack.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Java_Workspace/Sample/Chap_7/PracticalProblem/Nation.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Java_Workspace/Sample/Chap_7/PracticalProblem/PointManage.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Java_Workspace/Sample/Chap_7/PracticalProblem/PopulationSearch.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Java_Workspace/Sample/Chap_7/PracticalProblem/Precipitation.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Java_Workspace/Sample/Chap_7/PracticalProblem/Rect.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Java_Workspace/Sample/Chap_7/PracticalProblem/ScholarshipManage.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Java_Workspace/Sample/Chap_7/PracticalProblem/Shape.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Java_Workspace/Sample/Chap_7/PracticalProblem/StackManager.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Java_Workspace/Sample/Chap_7/PracticalProblem/Student.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Java_Workspace/Sample/Chap_7/PracticalProblem/StudentManage.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Java_Workspace/Sample/Chap_7/Word.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Java_Workspace/Sample/Chap_7/WordQuiz.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Java_Workspace/Sample/Chap_7/_07_.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Java_Workspace/Sample/Chap_8/Chap 8 필기.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Java_Workspace/Sample/Chap_8/Check Time.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Java_Workspace/Sample/Chap_8/HangMan.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Java_Workspace/Sample/Chap_8/_08_.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Java_Workspace/Sample/Chap_8/bytewrite.out" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Java_Workspace/Sample/Chap_8/test.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Java_Workspace/Sample/Chap_8/words.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Java_Workspace/Sample/Chap_8/write.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Java_Workspace/Sample/_01_.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/CodeItJava/LinkedListEx.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/CodeItJava/LinkedListEx.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Sample/Chap_2/Chap 2 이론문제.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/JavaStudy/Chap_2/Chap 2 이론문제.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Sample/Chap_2/Chap 2 필기.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/JavaStudy/Chap_2/Chap 2 필기.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Sample/Chap_2/Check Time.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/JavaStudy/Chap_2/Check Time.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Sample/Chap_2/PracticalProblem/Pro_1.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/JavaStudy/Chap_2/PracticalProblem/Pro_1.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Sample/Chap_2/PracticalProblem/Pro_10.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/JavaStudy/Chap_2/PracticalProblem/Pro_10.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Sample/Chap_2/PracticalProblem/Pro_11.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/JavaStudy/Chap_2/PracticalProblem/Pro_11.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Sample/Chap_2/PracticalProblem/Pro_12.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/JavaStudy/Chap_2/PracticalProblem/Pro_12.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Sample/Chap_2/PracticalProblem/Pro_2.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/JavaStudy/Chap_2/PracticalProblem/Pro_2.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Sample/Chap_2/PracticalProblem/Pro_3.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/JavaStudy/Chap_2/PracticalProblem/Pro_3.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Sample/Chap_2/PracticalProblem/Pro_4.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/JavaStudy/Chap_2/PracticalProblem/Pro_4.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Sample/Chap_2/PracticalProblem/Pro_5.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/JavaStudy/Chap_2/PracticalProblem/Pro_5.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Sample/Chap_2/PracticalProblem/Pro_6.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/JavaStudy/Chap_2/PracticalProblem/Pro_6.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Sample/Chap_2/PracticalProblem/Pro_7.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/JavaStudy/Chap_2/PracticalProblem/Pro_7.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Sample/Chap_2/PracticalProblem/Pro_8.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/JavaStudy/Chap_2/PracticalProblem/Pro_8.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Sample/Chap_2/PracticalProblem/Pro_9.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/JavaStudy/Chap_2/PracticalProblem/Pro_9.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Sample/Chap_2/_02_.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/JavaStudy/Chap_2/_02_.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Sample/Chap_2/_02_OpenChallenge.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/JavaStudy/Chap_2/_02_OpenChallenge.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Sample/Chap_3/Chap 3 이론문제.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/JavaStudy/Chap_3/Chap 3 이론문제.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Sample/Chap_3/Chap 3 필기.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/JavaStudy/Chap_3/Chap 3 필기.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Sample/Chap_3/Check Time.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/JavaStudy/Chap_3/Check Time.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Sample/Chap_3/PracticalProblem/Pro_1.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/JavaStudy/Chap_3/PracticalProblem/Pro_1.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Sample/Chap_3/PracticalProblem/Pro_10.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/JavaStudy/Chap_3/PracticalProblem/Pro_10.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Sample/Chap_3/PracticalProblem/Pro_11.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/JavaStudy/Chap_3/PracticalProblem/Pro_11.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Sample/Chap_3/PracticalProblem/Pro_12.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/JavaStudy/Chap_3/PracticalProblem/Pro_12.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Sample/Chap_3/PracticalProblem/Pro_13.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/JavaStudy/Chap_3/PracticalProblem/Pro_13.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Sample/Chap_3/PracticalProblem/Pro_14.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/JavaStudy/Chap_3/PracticalProblem/Pro_14.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Sample/Chap_3/PracticalProblem/Pro_15.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/JavaStudy/Chap_3/PracticalProblem/Pro_15.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Sample/Chap_3/PracticalProblem/Pro_16.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/JavaStudy/Chap_3/PracticalProblem/Pro_16.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Sample/Chap_3/PracticalProblem/Pro_2.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/JavaStudy/Chap_3/PracticalProblem/Pro_2.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Sample/Chap_3/PracticalProblem/Pro_3.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/JavaStudy/Chap_3/PracticalProblem/Pro_3.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Sample/Chap_3/PracticalProblem/Pro_4.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/JavaStudy/Chap_3/PracticalProblem/Pro_4.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Sample/Chap_3/PracticalProblem/Pro_5.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/JavaStudy/Chap_3/PracticalProblem/Pro_5.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Sample/Chap_3/PracticalProblem/Pro_6.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/JavaStudy/Chap_3/PracticalProblem/Pro_6.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Sample/Chap_3/PracticalProblem/Pro_7.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/JavaStudy/Chap_3/PracticalProblem/Pro_7.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Sample/Chap_3/PracticalProblem/Pro_8.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/JavaStudy/Chap_3/PracticalProblem/Pro_8.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Sample/Chap_3/PracticalProblem/Pro_9.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/JavaStudy/Chap_3/PracticalProblem/Pro_9.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Sample/Chap_3/_03_.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/JavaStudy/Chap_3/_03_.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Sample/Chap_3/_03_OpenChallenge.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/JavaStudy/Chap_3/_03_OpenChallenge.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Sample/Chap_4/Chap 4 이론문제.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/JavaStudy/Chap_4/Chap 4 이론문제.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Sample/Chap_4/Chap 4 필기.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/JavaStudy/Chap_4/Chap 4 필기.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Sample/Chap_4/Check Time.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/JavaStudy/Chap_4/Check Time.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Sample/Chap_4/PracticalProblem/Calc.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/JavaStudy/Chap_4/PracticalProblem/Calc.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Sample/Chap_4/PracticalProblem/CircleManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/JavaStudy/Chap_4/PracticalProblem/CircleManager.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Sample/Chap_4/PracticalProblem/Dictionary.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/JavaStudy/Chap_4/PracticalProblem/Dictionary.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Sample/Chap_4/PracticalProblem/Grade.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/JavaStudy/Chap_4/PracticalProblem/Grade.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Sample/Chap_4/PracticalProblem/MonthSchedule.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/JavaStudy/Chap_4/PracticalProblem/MonthSchedule.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Sample/Chap_4/PracticalProblem/PhoneBook.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/JavaStudy/Chap_4/PracticalProblem/PhoneBook.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Sample/Chap_4/PracticalProblem/Rectangle.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/JavaStudy/Chap_4/PracticalProblem/Rectangle.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Sample/Chap_4/PracticalProblem/Reservation.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/JavaStudy/Chap_4/PracticalProblem/Reservation.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Sample/Chap_4/PracticalProblem/Song.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/JavaStudy/Chap_4/PracticalProblem/Song.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Sample/Chap_4/PracticalProblem/StaticEx.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/JavaStudy/Chap_4/PracticalProblem/StaticEx.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Sample/Chap_4/PracticalProblem/TV.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/JavaStudy/Chap_4/PracticalProblem/TV.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Sample/Chap_4/WordGameApp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/JavaStudy/Chap_4/WordGameApp.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Sample/Chap_4/_04_.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/JavaStudy/Chap_4/_04_.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Sample/Chap_5/Chap 5 이론문제.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/JavaStudy/Chap_5/Chap 5 이론문제.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Sample/Chap_5/Chap 5 필기.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/JavaStudy/Chap_5/Chap 5 필기.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Sample/Chap_5/Check Time.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/JavaStudy/Chap_5/Check Time.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Sample/Chap_5/Game.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/JavaStudy/Chap_5/Game.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Sample/Chap_5/GameObject.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/JavaStudy/Chap_5/GameObject.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Sample/Chap_5/PracticalProblem/Calculator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/JavaStudy/Chap_5/PracticalProblem/Calculator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Sample/Chap_5/PracticalProblem/ColorPoint.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/JavaStudy/Chap_5/PracticalProblem/ColorPoint.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Sample/Chap_5/PracticalProblem/ColorTV.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/JavaStudy/Chap_5/PracticalProblem/ColorTV.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Sample/Chap_5/PracticalProblem/Converter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/JavaStudy/Chap_5/PracticalProblem/Converter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Sample/Chap_5/PracticalProblem/DictionaryApp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/JavaStudy/Chap_5/PracticalProblem/DictionaryApp.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Sample/Chap_5/PracticalProblem/GraphicEditor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/JavaStudy/Chap_5/PracticalProblem/GraphicEditor.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Sample/Chap_5/PracticalProblem/IPTV.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/JavaStudy/Chap_5/PracticalProblem/IPTV.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Sample/Chap_5/PracticalProblem/Km2Mile.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/JavaStudy/Chap_5/PracticalProblem/Km2Mile.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Sample/Chap_5/PracticalProblem/Point.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/JavaStudy/Chap_5/PracticalProblem/Point.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Sample/Chap_5/PracticalProblem/Point3D.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/JavaStudy/Chap_5/PracticalProblem/Point3D.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Sample/Chap_5/PracticalProblem/PositivePoint.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/JavaStudy/Chap_5/PracticalProblem/PositivePoint.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Sample/Chap_5/PracticalProblem/ShapeApp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/JavaStudy/Chap_5/PracticalProblem/ShapeApp.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Sample/Chap_5/PracticalProblem/StackApp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/JavaStudy/Chap_5/PracticalProblem/StackApp.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Sample/Chap_5/PracticalProblem/Won2Dollar.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/JavaStudy/Chap_5/PracticalProblem/Won2Dollar.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Sample/Chap_5/_05_.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/JavaStudy/Chap_5/_05_.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Sample/Chap_6/Chap 6 이론문제.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/JavaStudy/Chap_6/Chap 6 이론문제.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Sample/Chap_6/Chap 6 필기.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/JavaStudy/Chap_6/Chap 6 필기.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Sample/Chap_6/Check Time.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/JavaStudy/Chap_6/Check Time.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Sample/Chap_6/Histogram.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/JavaStudy/Chap_6/Histogram.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Sample/Chap_6/PracticalProblem/Circle.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/JavaStudy/Chap_6/PracticalProblem/Circle.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Sample/Chap_6/PracticalProblem/Gambling.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/JavaStudy/Chap_6/PracticalProblem/Gambling.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Sample/Chap_6/PracticalProblem/MyPoint.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/JavaStudy/Chap_6/PracticalProblem/MyPoint.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Sample/Chap_6/PracticalProblem/Pro_5.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/JavaStudy/Chap_6/PracticalProblem/Pro_5.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Sample/Chap_6/PracticalProblem/Pro_6.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/JavaStudy/Chap_6/PracticalProblem/Pro_6.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Sample/Chap_6/PracticalProblem/Pro_7.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/JavaStudy/Chap_6/PracticalProblem/Pro_7.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Sample/Chap_6/PracticalProblem/Pro_8.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/JavaStudy/Chap_6/PracticalProblem/Pro_8.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Sample/Chap_6/PracticalProblem/Pro_9.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/JavaStudy/Chap_6/PracticalProblem/Pro_9.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Sample/Chap_6/PracticalProblem/StringEditor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/JavaStudy/Chap_6/PracticalProblem/StringEditor.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Sample/Chap_6/PracticalProblem/app/GraphicEditor.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Sample/Chap_6/PracticalProblem/base/Shape.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/JavaStudy/Chap_6/PracticalProblem/base/Shape.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Sample/Chap_6/PracticalProblem/derived/Circle.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/JavaStudy/Chap_6/PracticalProblem/derived/Circle.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Sample/Chap_6/PracticalProblem/etc/Calc.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/JavaStudy/Chap_6/PracticalProblem/etc/Calc.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Sample/Chap_6/PracticalProblem/main/MainApp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/JavaStudy/Chap_6/PracticalProblem/main/MainApp.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Sample/Chap_6/_06_.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/JavaStudy/Chap_6/_06_.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Sample/Chap_7/Chap 7 이론문제.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/JavaStudy/Chap_7/Chap 7 이론문제.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Sample/Chap_7/Chap 7 필기.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/JavaStudy/Chap_7/Chap 7 필기.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Sample/Chap_7/Check Time.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/JavaStudy/Chap_7/Check Time.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Sample/Chap_7/PracticalProblem/Average.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/JavaStudy/Chap_7/PracticalProblem/Average.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Sample/Chap_7/PracticalProblem/CapitalQuiz.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/JavaStudy/Chap_7/PracticalProblem/CapitalQuiz.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Sample/Chap_7/PracticalProblem/GraphicEditor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/JavaStudy/Chap_7/PracticalProblem/GraphicEditor.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Sample/Chap_7/PracticalProblem/LocationManage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/JavaStudy/Chap_7/PracticalProblem/LocationManage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Sample/Chap_7/PracticalProblem/MaxInt.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/JavaStudy/Chap_7/PracticalProblem/MaxInt.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Sample/Chap_7/PracticalProblem/MyProgram.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/JavaStudy/Chap_7/PracticalProblem/MyProgram.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Sample/Chap_7/PracticalProblem/PointManage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/JavaStudy/Chap_7/PracticalProblem/PointManage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Sample/Chap_7/PracticalProblem/PopulationSearch.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/JavaStudy/Chap_7/PracticalProblem/PopulationSearch.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Sample/Chap_7/PracticalProblem/Precipitation.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/JavaStudy/Chap_7/PracticalProblem/Precipitation.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Sample/Chap_7/PracticalProblem/ScholarshipManage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/JavaStudy/Chap_7/PracticalProblem/ScholarshipManage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Sample/Chap_7/PracticalProblem/StackManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/JavaStudy/Chap_7/PracticalProblem/StackManager.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Sample/Chap_7/PracticalProblem/StudentManage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/JavaStudy/Chap_7/PracticalProblem/StudentManage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Sample/Chap_7/WordQuiz.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/JavaStudy/Chap_7/WordQuiz.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Sample/Chap_7/_07_.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Sample/Chap_8/Chap 8 이론문제.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/JavaStudy/Chap_8/Chap 8 이론문제.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Sample/Chap_8/Chap 8 필기.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/JavaStudy/Chap_8/Chap 8 필기.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Sample/Chap_8/Check Time.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/JavaStudy/Chap_8/Check Time.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Sample/Chap_8/HangMan.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/JavaStudy/Chap_8/HangMan.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Sample/Chap_8/_08_.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Sample/Chap_8/bytewrite.out" beforeDir="false" afterPath="$PROJECT_DIR$/src/JavaStudy/Chap_8/bytewrite.out" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Sample/Chap_8/test.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/JavaStudy/Chap_8/test.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Sample/Chap_8/words.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/JavaStudy/Chap_8/words.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Sample/Chap_8/write.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Sample/_01_.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/JavaStudy/_01_.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -230,7 +467,35 @@
       <workItem from="1700218459237" duration="7045000" />
       <workItem from="1700274500613" duration="7418000" />
       <workItem from="1700385953343" duration="2921000" />
-      <workItem from="1700444590821" duration="12182000" />
+      <workItem from="1700444590821" duration="12260000" />
+      <workItem from="1700538559466" duration="8882000" />
+      <workItem from="1700704235788" duration="9505000" />
+      <workItem from="1700790760322" duration="5688000" />
+      <workItem from="1700814462985" duration="3842000" />
+      <workItem from="1700877215301" duration="5088000" />
+      <workItem from="1700908830926" duration="2163000" />
+      <workItem from="1700964148032" duration="6405000" />
+      <workItem from="1701080819889" duration="5969000" />
+      <workItem from="1701170641666" duration="2259000" />
+      <workItem from="1701328094647" duration="7622000" />
+      <workItem from="1701418081858" duration="1209000" />
+      <workItem from="1701483355287" duration="594000" />
+      <workItem from="1701956948331" duration="971000" />
+      <workItem from="1702090056041" duration="9002000" />
+      <workItem from="1702187401950" duration="2321000" />
+      <workItem from="1702609137226" duration="3348000" />
+      <workItem from="1702702644286" duration="17536000" />
+      <workItem from="1702778930019" duration="6507000" />
+      <workItem from="1702874242699" duration="777000" />
+      <workItem from="1702885541010" duration="5308000" />
+      <workItem from="1702963612676" duration="1871000" />
+      <workItem from="1703043981295" duration="1190000" />
+      <workItem from="1703475835991" duration="4864000" />
+      <workItem from="1703576505133" duration="6762000" />
+      <workItem from="1703756211224" duration="2154000" />
+      <workItem from="1703925337691" duration="3162000" />
+      <workItem from="1704448664949" duration="1867000" />
+      <workItem from="1704502327750" duration="3674000" />
     </task>
     <servers />
   </component>

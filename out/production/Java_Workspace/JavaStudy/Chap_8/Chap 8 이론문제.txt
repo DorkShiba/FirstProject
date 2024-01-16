@@ -1,0 +1,64 @@
+1. 스트림 설명 틀린 것
+ -> 2번 "스트림은 다른 스트림과 연결 불가"
+
+2. 다음에서 적절한 스트림 클래스
+ 1) 음악 파일 연주: FileInputStream, FileOutputStream
+ 2) PPT 파일 복사: FileInputStream, FileOutputStream
+ 3) 영어와 한글 기록된 사전 읽기: FileReader(FileInputStream도 무관)
+ 4) 선수 이름과 점수를 문자열로 저장: FileWriter(FileOutputStream도 무관)
+
+3. 이미지 파일 읽을 때 가장 적합한 클래스
+ -> 4번 "FileInputStream"
+
+4. 파일을 읽기 위한 스트림 생성코드에서 발생가능 예외, try-catch문 작성
+ -> FileNotFoundException(IOException)
+try {
+    FileInputStream fin = new FileInputStream("song.mp3");
+} catch(FileNotFoundException e) {
+    System.out.println("error");
+}
+
+5. 파일 크기를 알고자 할 때 필요한 클래스
+ -> 1번 "File"
+
+6. File 클래스 직접적 기능이 아닌 것
+ -> 1번 "파일 읽고 쓰기"
+
+7. 다음 코드 문답
+ 1) file.isFile() 리턴 값: true
+ 2) file.getParent() 리턴 값: "c:\\windows"
+ 3) file.getPath() 리턴 값: "c:\\windows\\system.ini"
+ 4) file.getName() 리턴 값: "system.ini"
+ 5) 아래 빈칸 채워 동일 코드 작성
+File file = new File("c:\\windows", "system.ini");
+
+8. 문자 집합 설명 틀린 것
+ -> 3번 "바이트 스트림 입출력 시 문자 집합 고려해야 함"
+
+9. c:\temp\test.txt 파일을 읽어 출력하는 코드 완성
+FileInputStream fin = null;
+try {
+    fin = new FileInputStream("c:\\temp\\test.txt");
+    int c;
+    while (true) {
+        c = fin.read();
+        if (c == -1) { break; }
+        System.out.print((char) c);
+    }
+    fin.close();
+} catch (FileNotFoundException e) {
+    System.out.prinlnt("파일을 찾을 수 없습니다.");
+} catch (IOException e) {
+    System.out.println("입출력 오류가 발생했습니다.");
+}
+
+10. 50바이트 크기 버퍼를 사용해 C:\temp\sample.txt를 읽어 출력하는 코드 완성
+BufferedOutputStream bout = new BufferedOutputStream(System.out, 50);
+File f = new File("C:\temp\sample.txt");
+FileReader fin = new FileReader(f);
+int c;
+while ((c = fin.read()) != -1) {
+    bout.write((char) c);
+}
+fin.close();
+bout.close();

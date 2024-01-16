@@ -1,1 +1,0 @@
-package Sample.Chap_8;import java.io.*;import java.util.*;public class _08_ {    public static void main(String[] args) {        File f = new File("c:\\Temp\\res.txt");        if (f.renameTo(new File("c:\\Temp\\2020\\test.txt"))) {            System.out.println("rename");        } else { System.out.println("error"); }    }}

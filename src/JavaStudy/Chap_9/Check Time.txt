@@ -1,0 +1,31 @@
+9-1
+1. AWT와 스윙 중 먼저 세상에 나온 것
+ - AWT
+
+2. 응용프로그램의 GUI 모양이 맥, 윈도우, 리눅스 등 운영체제에 따라 달라지는 것
+ - AWT
+
+3. 둘 중 실행속도 빠른 것, 이유
+ - 스윙, AWT와 달리 운영체제의 자원에 의존하지 않기 때문에
+
+--------------------------------------------------------------
+9-3
+1. 다음 중 최상위 컨테이너가 아닌 것
+ - 1번 'JPanel'
+
+2. JFrame 내에 컴포넌트가 부착되는 특별한 영역을 뭐라고 하는가?
+   이 영역에 "Hello" 문자열 가진 JButton 컴포넌트 삽입하는 코드 작성
+ - 컨텐트팬
+class MyFrame extends JFrame {
+    public MyFrame() {
+        setTitle("MyFrame");
+        setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+
+        Container cp = getContentPane();
+        cp.setLayout(new FlowLayout());
+        cp.add(new Button("Hello"));
+
+        setSize(100, 100);
+        setVisible(true);
+    }
+}

@@ -1,0 +1,7 @@
+Hwang 1234
+Kim 5678
+Lim 0987
+Lee 1111
+Sin 2023
+Choi 1024
+Pak 3001
